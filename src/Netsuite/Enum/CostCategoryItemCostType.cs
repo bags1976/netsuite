@@ -1,0 +1,48 @@
+namespace Netsuite.Enum
+{
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("wsdl", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:types.accounting_2021_1.lists.webservices.netsuite.com")]
+    public enum CostCategoryItemCostType {
+
+        /// <remarks/>
+        _laborRun,
+
+        /// <remarks/>
+        _laborRunOverhead,
+
+        /// <remarks/>
+        _laborSetup,
+
+        /// <remarks/>
+        _laborSetupOverhead,
+
+        /// <remarks/>
+        _landed,
+
+        /// <remarks/>
+        _machineRun,
+
+        /// <remarks/>
+        _machineRunOverhead,
+
+        /// <remarks/>
+        _machineSetup,
+
+        /// <remarks/>
+        _machineSetupOverhead,
+
+        /// <remarks/>
+        _material,
+
+        /// <remarks/>
+        _materialOverhead,
+
+        /// <remarks/>
+        _outsourcingCharge,
+
+        /// <remarks/>
+        _service,
+    }
+}

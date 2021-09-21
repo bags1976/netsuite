@@ -1,3 +1,5 @@
+using Netsuite.Enum;
+
 namespace Netsuite.Dto
 {
     /// <remarks/>
