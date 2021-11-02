@@ -6,13 +6,8 @@ namespace Netsuite.Enum
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:types.common_2021_1.platform.webservices.netsuite.com")]
     public enum TransactionBillVarianceStatus {
 
-        /// <remarks/>
-        _journalNotPosted,
-
-        /// <remarks/>
-        _journalPosted,
-
-        /// <remarks/>
-        _noVariances,
+        JOURNALNOTPOSTED,
+        JOURNALPOSTED,
+        NOVARIANCES,
     }
 }

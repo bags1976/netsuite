@@ -119,6 +119,11 @@ namespace Netsuite.Dto
         private RecordRef[] linkedOrderListField;
 
         private CustomFieldRef[] customFieldListField;
+        
+        public string Subsidiary { get; set; }
+        public string NetAmount { get; set; }
+        public bool Fulfillable { get; set; }
+        public string Id { get; set; }
 
         /// <remarks/>
         public RecordRef item {

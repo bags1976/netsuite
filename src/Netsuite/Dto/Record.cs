@@ -215,5 +215,7 @@ namespace Netsuite.Dto
                 this.nullFieldListField = value;
             }
         }
+        
+        public string Id { get; set; }
     }
 }

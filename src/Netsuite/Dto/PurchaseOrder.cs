@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using Netsuite.Enum;
 
 namespace Netsuite.Dto
@@ -102,7 +103,7 @@ namespace Netsuite.Dto
 
         private string messageField;
 
-        private Address billingAddressField;
+        private RecordRef billingAddressField;
 
         private RecordRef billAddressListField;
 
@@ -122,7 +123,7 @@ namespace Netsuite.Dto
 
         private bool tax2TotalFieldSpecified;
 
-        private Address shippingAddressField;
+        private RecordRef shippingAddressField;
 
         private bool shipIsResidentialField;
 
@@ -181,6 +182,10 @@ namespace Netsuite.Dto
         private string internalIdField;
 
         private string externalIdField;
+        
+        public bool Void { get; set; }
+        
+        public List<PurchaseOrderItem> Lines { get; set; }
 
         /// <remarks/>
         public System.DateTime createdDate {
@@ -656,7 +661,7 @@ namespace Netsuite.Dto
         }
 
         /// <remarks/>
-        public Address billingAddress {
+        public RecordRef billingAddress {
             get {
                 return this.billingAddressField;
             }
@@ -759,7 +764,7 @@ namespace Netsuite.Dto
         }
 
         /// <remarks/>
-        public Address shippingAddress {
+        public RecordRef shippingAddress {
             get {
                 return this.shippingAddressField;
             }

@@ -6,13 +6,8 @@ namespace Netsuite.Enum
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:types.relationships_2021_1.lists.webservices.netsuite.com")]
     public enum EmailPreference {
 
-        /// <remarks/>
-        _default,
-
-        /// <remarks/>
-        _hTML,
-
-        /// <remarks/>
-        _pDF,
+        DEFAULT,
+        HTML,
+        PDF,
     }
 }

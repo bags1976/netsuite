@@ -241,6 +241,9 @@ namespace Netsuite.Dto
         private string internalIdField;
 
         private string externalIdField;
+        
+        public string EntityId { get; set; }
+        public string EntityTitle { get; set; }
 
         /// <remarks/>
         public RecordRef customForm {
