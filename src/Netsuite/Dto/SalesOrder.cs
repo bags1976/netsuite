@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using Netsuite.Enum;
 
 namespace Netsuite.Dto
@@ -485,7 +486,7 @@ namespace Netsuite.Dto
         public bool Void { get; set; }
         public List<SalesOrderItem> Lines { get; set; }
         public string foreignTotal { get; set; }
-        public DateTime nextBillDate { get; set; }
+        public System.DateTime nextBillDate { get; set; }
         public string entity { get; set; }
         public string billaddressattention { get; set; }
         public string billaddressline1 { get; set; }
@@ -501,7 +502,7 @@ namespace Netsuite.Dto
         public string shipaddresszip { get; set; }
         public string shipaddresscountry { get; set; }
         public string shipaddressphone { get; set; }
-        public DateTime? shipDate { get; set; }
+        public System.DateTime? shipDate { get; set; }
 
         #region public auto genereated
 
