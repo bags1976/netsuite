@@ -169,7 +169,7 @@ namespace Netsuite.Dto
 
         private bool orderStatusFieldSpecified;
 
-        private PurchaseOrderItemList itemListField;
+        private PurchaseOrderItem[] itemListField;
 
         private AccountingBookDetailList accountingBookDetailListField;
 
@@ -999,7 +999,7 @@ namespace Netsuite.Dto
         }
 
         /// <remarks/>
-        public PurchaseOrderItemList itemList {
+        public PurchaseOrderItem[] item {
             get {
                 return this.itemListField;
             }

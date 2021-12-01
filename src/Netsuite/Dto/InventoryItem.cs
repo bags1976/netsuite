@@ -3071,7 +3071,7 @@ public partial class InventoryItem
 
     /// <remarks/>
     [XmlArrayItem("productFeed", IsNullable = false)]
-    public ItemProductFeed[] productFeedList
+    public ItemProductFeed[] productFeed
     {
         get { return this.productFeedListField; }
         set { this.productFeedListField = value; }
@@ -3079,7 +3079,7 @@ public partial class InventoryItem
 
     /// <remarks/>
     [XmlArrayItem("recordRef", Namespace = "urn:core_2021_1.platform.webservices.netsuite.com", IsNullable = false)]
-    public RecordRef[] subsidiaryList
+    public RecordRef[] subsidiary
     {
         get { return this.subsidiaryListField; }
         set { this.subsidiaryListField = value; }
@@ -3087,7 +3087,7 @@ public partial class InventoryItem
 
     /// <remarks/>
     [XmlArrayItem("itemOptions", IsNullable = false)]
-    public RecordRef[] itemOptionsList
+    public RecordRef[] itemOptions
     {
         get { return this.itemOptionsListField; }
         set { this.itemOptionsListField = value; }

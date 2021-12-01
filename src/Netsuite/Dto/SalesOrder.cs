@@ -467,7 +467,7 @@ namespace Netsuite.Dto
 
         private PromotionsList promotionsListField;
 
-        private SalesOrderItemList itemListField;
+        private SalesOrderItem[] itemListField;
 
         private SalesOrderShipGroupList shipGroupListField;
 
@@ -2840,7 +2840,7 @@ namespace Netsuite.Dto
         }
 
         /// <remarks/>
-        public SalesOrderItemList itemList {
+        public SalesOrderItem[] item {
             get {
                 return this.itemListField;
             }
