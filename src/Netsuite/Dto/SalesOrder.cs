@@ -484,7 +484,6 @@ namespace Netsuite.Dto
         #endregion
 
         public bool Void { get; set; }
-        public List<SalesOrderItem> Lines { get; set; }
         public string foreignTotal { get; set; }
         public System.DateTime nextBillDate { get; set; }
         public string entity { get; set; }

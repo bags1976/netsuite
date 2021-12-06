@@ -185,8 +185,6 @@ namespace Netsuite.Dto
         
         public bool Void { get; set; }
         
-        public List<PurchaseOrderItem> Lines { get; set; }
-
         /// <remarks/>
         public System.DateTime createdDate {
             get {
