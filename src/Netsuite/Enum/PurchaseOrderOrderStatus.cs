@@ -3,31 +3,37 @@ namespace Netsuite.Enum
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("wsdl", "4.8.3928.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:types.purchases_2021_1.transactions.webservices.netsuite.com")]
-    public enum PurchaseOrderOrderStatus {
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:types.purchases_2021_1.transactions.webservices.netsuite.com")]
+    public enum PurchaseOrderOrderStatus
+    {
+        /// Closed<remarks/>
+        H,
 
-        /// <remarks/>
-        _closed,
+        /// Fully Billed<remarks/>
+        G,
 
-        /// <remarks/>
-        _fullyBilled,
+        /// Partially Received<remarks/>
+        D,
 
-        /// <remarks/>
-        _partiallyReceived,
+        /// Pending Billing Partially Received<remarks/>
+        E,
 
-        /// <remarks/>
-        _pendingBillingPartiallyReceived,
+        /// Pending Billing<remarks/>
+        F,
 
-        /// <remarks/>
-        _pendingBilling,
+        /// Pending Receipt<remarks/>
+        B,
 
-        /// <remarks/>
-        _pendingReceipt,
+        /// Pending Supervisor Approval<remarks/>
+        A,
 
-        /// <remarks/>
-        _pendingSupervisorApproval,
+        /// Rejected By Supervisor<remarks/>
+        C,
 
-        /// <remarks/>
-        _rejectedBySupervisor,
+        /// Not sure - but in docs<remarks/>
+        P,
+
+        ///  Not sure - but in docs<remarks/>
+        Y
     }
 }

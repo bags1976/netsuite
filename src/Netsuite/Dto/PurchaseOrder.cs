@@ -159,10 +159,6 @@ namespace Netsuite.Dto
 
         private RecordRef intercoTransactionField;
 
-        private IntercoStatus intercoStatusField;
-
-        private bool intercoStatusFieldSpecified;
-
         private string statusField;
 
         private PurchaseOrderOrderStatus orderStatusField;
@@ -941,27 +937,6 @@ namespace Netsuite.Dto
             }
             set {
                 this.intercoTransactionField = value;
-            }
-        }
-
-        /// <remarks/>
-        public IntercoStatus intercoStatus {
-            get {
-                return this.intercoStatusField;
-            }
-            set {
-                this.intercoStatusField = value;
-            }
-        }
-
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool intercoStatusSpecified {
-            get {
-                return this.intercoStatusFieldSpecified;
-            }
-            set {
-                this.intercoStatusFieldSpecified = value;
             }
         }
 
