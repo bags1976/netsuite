@@ -8,6 +8,8 @@ namespace Netsuite.Dto
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:accounting_2021_1.lists.webservices.netsuite.com")]
     public partial class Bom : Record {
 
+        #region AudtoGeneratedPrivateFields
+
         private RecordRef customFormField;
 
         private string nameField;
@@ -19,10 +21,6 @@ namespace Netsuite.Dto
         private System.DateTime createdDateField;
 
         private bool createdDateFieldSpecified;
-
-        private bool isInactiveField;
-
-        private bool isInactiveFieldSpecified;
 
         private bool useComponentYieldField;
 
@@ -38,14 +36,6 @@ namespace Netsuite.Dto
 
         private RecordRef[] restrictToAssembliesListField;
 
-        private bool availableForAllLocationsField;
-
-        private bool availableForAllLocationsFieldSpecified;
-
-        private RecordRef[] restrictToLocationsListField;
-
-        private RecordRef[] subsidiaryListField;
-
         private bool includeChildrenField;
 
         private bool includeChildrenFieldSpecified;
@@ -55,6 +45,41 @@ namespace Netsuite.Dto
         private string internalIdField;
 
         private string externalIdField;
+
+        #endregion
+
+        #region  PublicFields
+
+        public int assemblyId {get; set;}
+        public int bomId {get; set;}
+        public string subsidiary {get; set; }
+        public string bomName {get; set; }
+        public System.DateTime bomCreatedDate {get; set;}
+        public bool bomIsInactive {get; set;}
+        public string bomExternalId {get; set; }
+        public string assemblyName {get; set; }
+        public bool assemblyIsInactive {get; set;}
+        public string assemblyDescription {get; set; }
+        public string revisionName {get; set; }
+        public int revisionId {get; set;}
+        public System.DateTime revisionCreatedDate {get; set;}
+        public string revisionExternalId {get; set; }
+        public bool revisionIsInactive {get; set;}
+        public System.DateTime? effectiveStartDate {get; set;}
+        public System.DateTime? effectiveEndDate {get; set;}
+        public int componentId { get; set; }
+        public string itemSource {get; set; }
+        public string description {get; set; }
+        public string componentName {get; set; }
+        public string unitsName {get; set; }
+        public string restrictToLocations {get; set; }
+        public decimal bomQuantity {get; set; }
+        public int componentLineId { get; set; }
+        public int units { get; set; }
+
+        #endregion
+
+        #region  AudtoGeneratedPublicFields
 
         /// <remarks/>
         public RecordRef customForm {
@@ -115,27 +140,6 @@ namespace Netsuite.Dto
             }
             set {
                 this.createdDateFieldSpecified = value;
-            }
-        }
-
-        /// <remarks/>
-        public bool isInactive {
-            get {
-                return this.isInactiveField;
-            }
-            set {
-                this.isInactiveField = value;
-            }
-        }
-
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool isInactiveSpecified {
-            get {
-                return this.isInactiveFieldSpecified;
-            }
-            set {
-                this.isInactiveFieldSpecified = value;
             }
         }
 
@@ -213,49 +217,6 @@ namespace Netsuite.Dto
         }
 
         /// <remarks/>
-        public bool availableForAllLocations {
-            get {
-                return this.availableForAllLocationsField;
-            }
-            set {
-                this.availableForAllLocationsField = value;
-            }
-        }
-
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool availableForAllLocationsSpecified {
-            get {
-                return this.availableForAllLocationsFieldSpecified;
-            }
-            set {
-                this.availableForAllLocationsFieldSpecified = value;
-            }
-        }
-
-        /// <remarks/>
-        [System.Xml.Serialization.XmlArrayItemAttribute("recordRef", Namespace="urn:core_2021_1.platform.webservices.netsuite.com", IsNullable=false)]
-        public RecordRef[] restrictToLocationsList {
-            get {
-                return this.restrictToLocationsListField;
-            }
-            set {
-                this.restrictToLocationsListField = value;
-            }
-        }
-
-        /// <remarks/>
-        [System.Xml.Serialization.XmlArrayItemAttribute("recordRef", Namespace="urn:core_2021_1.platform.webservices.netsuite.com", IsNullable=false)]
-        public RecordRef[] subsidiaryList {
-            get {
-                return this.subsidiaryListField;
-            }
-            set {
-                this.subsidiaryListField = value;
-            }
-        }
-
-        /// <remarks/>
         public bool includeChildren {
             get {
                 return this.includeChildrenField;
@@ -308,5 +269,9 @@ namespace Netsuite.Dto
                 this.externalIdField = value;
             }
         }
+
+        #endregion
+
+
     }
 }
