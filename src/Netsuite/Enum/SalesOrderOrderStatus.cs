@@ -6,31 +6,28 @@ namespace Netsuite.Enum
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:types.sales_2021_1.transactions.webservices.netsuite.com")]
     public enum SalesOrderOrderStatus {
 
-        /// <remarks/>
-        _pendingApproval,
+        /// PendingApproval<remarks/>
+        A,
 
-        /// <remarks/>
-        _pendingFulfillment,
+        /// PendingFulfillment<remarks/>
+        B,
 
-        /// <remarks/>
-        _cancelled,
+        /// Cancelled<remarks/>
+        C,
 
-        /// <remarks/>
-        _partiallyFulfilled,
+        /// PartiallyFulfilled<remarks/>
+        D,
 
-        /// <remarks/>
-        _pendingBillingPartFulfilled,
+        /// PendingBillingPartFulfilled<remarks/>
+        E,
 
-        /// <remarks/>
-        _pendingBilling,
+        /// PendingBilling<remarks/>
+        F,
 
-        /// <remarks/>
-        _fullyBilled,
+        /// FullyBilled<remarks/>
+        G,
 
-        /// <remarks/>
-        _closed,
-
-        /// <remarks/>
-        _undefined,
+        /// Closed<remarks/>
+        H
     }
 }
