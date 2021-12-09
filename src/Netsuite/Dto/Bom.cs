@@ -54,7 +54,7 @@ namespace Netsuite.Dto
         public int bomId {get; set;}
         public string subsidiary {get; set; }
         public string bomName {get; set; }
-        public DateTime bomCreatedDate {get; set;}
+        public System.DateTime bomCreatedDate {get; set;}
         public bool bomIsInactive {get; set;}
         public string bomExternalId {get; set; }
         public string assemblyName {get; set; }
@@ -62,11 +62,11 @@ namespace Netsuite.Dto
         public string assemblyDescription {get; set; }
         public string revisionName {get; set; }
         public int revisionId {get; set;}
-        public DateTime revisionCreatedDate {get; set;}
+        public System.DateTime revisionCreatedDate {get; set;}
         public string revisionExternalId {get; set; }
         public bool revisionIsInactive {get; set;}
-        public DateTime? effectiveStartDate {get; set;}
-        public DateTime? effectiveEndDate {get; set;}
+        public System.DateTime? effectiveStartDate {get; set;}
+        public System.DateTime? effectiveEndDate {get; set;}
         public int componentId { get; set; }
         public string itemSource {get; set; }
         public string description {get; set; }
