@@ -229,10 +229,6 @@ namespace Netsuite.Dto
 
         private RecordRef _shipMethodField;
 
-        private VsoeSopGroup _vsoeSopGroupField;
-
-        private bool _vsoeSopGroupFieldSpecified;
-
         private bool _vsoeIsEstimateField;
 
         private bool _vsoeIsEstimateFieldSpecified;
@@ -248,14 +244,6 @@ namespace Netsuite.Dto
         private decimal _vsoeAllocationField;
 
         private bool _vsoeAllocationFieldSpecified;
-
-        private VsoeDeferral _vsoeDeferralField;
-
-        private bool _vsoeDeferralFieldSpecified;
-
-        private VsoePermitDiscount _vsoePermitDiscountField;
-
-        private bool _vsoePermitDiscountFieldSpecified;
 
         private bool _vsoeDeliveredField;
 
@@ -1093,21 +1081,6 @@ namespace Netsuite.Dto
         }
 
         /// <remarks/>
-        public VsoeSopGroup VsoeSopGroup
-        {
-            get => _vsoeSopGroupField;
-            set => _vsoeSopGroupField = value;
-        }
-
-        /// <remarks/>
-        [XmlIgnoreAttribute()]
-        public bool VsoeSopGroupSpecified
-        {
-            get => _vsoeSopGroupFieldSpecified;
-            set => _vsoeSopGroupFieldSpecified = value;
-        }
-
-        /// <remarks/>
         public bool VsoeIsEstimate
         {
             get => _vsoeIsEstimateField;
@@ -1165,36 +1138,6 @@ namespace Netsuite.Dto
         {
             get => _vsoeAllocationFieldSpecified;
             set => _vsoeAllocationFieldSpecified = value;
-        }
-
-        /// <remarks/>
-        public VsoeDeferral VsoeDeferral
-        {
-            get => _vsoeDeferralField;
-            set => _vsoeDeferralField = value;
-        }
-
-        /// <remarks/>
-        [XmlIgnoreAttribute()]
-        public bool VsoeDeferralSpecified
-        {
-            get => _vsoeDeferralFieldSpecified;
-            set => _vsoeDeferralFieldSpecified = value;
-        }
-
-        /// <remarks/>
-        public VsoePermitDiscount VsoePermitDiscount
-        {
-            get => _vsoePermitDiscountField;
-            set => _vsoePermitDiscountField = value;
-        }
-
-        /// <remarks/>
-        [XmlIgnoreAttribute()]
-        public bool VsoePermitDiscountSpecified
-        {
-            get => _vsoePermitDiscountFieldSpecified;
-            set => _vsoePermitDiscountFieldSpecified = value;
         }
 
         /// <remarks/>

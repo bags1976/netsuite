@@ -7,9 +7,9 @@ namespace Netsuite.Enum
     public enum SalesOrderItemCreatePo {
 
         /// <remarks/>
-        _dropShipment,
+        DropShip,
 
         /// <remarks/>
-        _specialOrder,
+        SpecialOrder,
     }
 }
