@@ -7,12 +7,12 @@ namespace Netsuite.Enum
     public enum CustomerCreditHoldOverride {
 
         /// <remarks/>
-        _auto,
+        AUTO,
 
         /// <remarks/>
-        _on,
+        ON,
 
         /// <remarks/>
-        _off,
+        OFF,
     }
 }

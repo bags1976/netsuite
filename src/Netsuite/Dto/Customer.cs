@@ -1,2439 +1,1617 @@
+using System;
+using System.CodeDom.Compiler;
+using System.ComponentModel;
+using System.Diagnostics;
+using System.Xml.Serialization;
 using Netsuite.Enum;
 
 namespace Netsuite.Dto
 {
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("wsdl", "4.8.3928.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:relationships_2021_1.lists.webservices.netsuite.com")]
-    public partial class Customer : Record {
+    [GeneratedCode("wsdl", "4.8.3928.0")]
+    [Serializable()]
+    [DebuggerStepThrough()]
+    [DesignerCategory("code")]
+    [XmlType(Namespace="urn:relationships_2021_1.lists.webservices.netsuite.com")]
+    public class Customer : Record {
 
-        private RecordRef customFormField;
+        private RecordRef _customFormField;
 
-        private string entityIdField;
+        private string _entityIdField;
 
-        private string altNameField;
+        private string _altNameField;
 
-        private bool isPersonField;
+        private bool _isPersonField;
 
-        private bool isPersonFieldSpecified;
+        private bool _isPersonFieldSpecified;
 
-        private string phoneticNameField;
+        private string _phoneticNameField;
 
-        private string salutationField;
+        private string _salutationField;
 
-        private string firstNameField;
+        private string _firstNameField;
 
-        private string middleNameField;
+        private string _middleNameField;
 
-        private string lastNameField;
+        private string _lastNameField;
 
-        private string companyNameField;
+        private string _companyNameField;
 
-        private RecordRef entityStatusField;
+        private RecordRef _entityStatusField;
 
-        private RecordRef parentField;
+        private RecordRef _parentField;
 
-        private string phoneField;
+        private string _phoneField;
 
-        private string faxField;
+        private string _faxField;
 
-        private string emailField;
+        private string _emailField;
 
-        private string urlField;
+        private string _urlField;
 
-        private string defaultAddressField;
+        private string _defaultAddressField;
 
-        private bool isInactiveField;
+        private bool _isInactiveField;
 
-        private bool isInactiveFieldSpecified;
+        private bool _isInactiveFieldSpecified;
 
-        private RecordRef categoryField;
+        private RecordRef _categoryField;
 
-        private string titleField;
+        private string _titleField;
 
-        private string printOnCheckAsField;
+        private string _printOnCheckAsField;
 
-        private string altPhoneField;
+        private string _altPhoneField;
 
-        private string homePhoneField;
+        private string _homePhoneField;
 
-        private string mobilePhoneField;
+        private string _mobilePhoneField;
 
-        private string altEmailField;
+        private string _altEmailField;
 
-        private Language languageField;
+        private string _languageField;
 
-        private bool languageFieldSpecified;
+        private bool _languageFieldSpecified;
 
-        private string commentsField;
+        private string _commentsField;
 
-        private CustomerNumberFormat numberFormatField;
+        private bool _numberFormatFieldSpecified;
 
-        private bool numberFormatFieldSpecified;
+        private bool _negativeNumberFormatFieldSpecified;
 
-        private CustomerNegativeNumberFormat negativeNumberFormatField;
+        private DateTime _dateCreatedField;
 
-        private bool negativeNumberFormatFieldSpecified;
+        private bool _dateCreatedFieldSpecified;
 
-        private System.DateTime dateCreatedField;
+        private RecordRef _imageField;
 
-        private bool dateCreatedFieldSpecified;
+        private EmailPreference _emailPreferenceField;
 
-        private RecordRef imageField;
+        private bool _emailPreferenceFieldSpecified;
 
-        private EmailPreference emailPreferenceField;
+        private RecordRef _subsidiaryField;
 
-        private bool emailPreferenceFieldSpecified;
+        private RecordRef _representingSubsidiaryField;
 
-        private RecordRef subsidiaryField;
+        private RecordRef _salesRepField;
 
-        private RecordRef representingSubsidiaryField;
+        private RecordRef _territoryField;
 
-        private RecordRef salesRepField;
+        private string _contribPctField;
 
-        private RecordRef territoryField;
+        private RecordRef _partnerField;
 
-        private string contribPctField;
+        private RecordRef _salesGroupField;
 
-        private RecordRef partnerField;
+        private string _vatRegNumberField;
 
-        private RecordRef salesGroupField;
+        private string _accountNumberField;
 
-        private string vatRegNumberField;
+        private bool _taxExemptField;
 
-        private string accountNumberField;
+        private bool _taxExemptFieldSpecified;
 
-        private bool taxExemptField;
+        private RecordRef _termsField;
 
-        private bool taxExemptFieldSpecified;
+        private double _creditLimitField;
 
-        private RecordRef termsField;
+        private bool _creditLimitFieldSpecified;
 
-        private double creditLimitField;
+        private CustomerCreditHoldOverride _creditHoldOverrideField;
 
-        private bool creditLimitFieldSpecified;
+        private bool _creditHoldOverrideFieldSpecified;
 
-        private CustomerCreditHoldOverride creditHoldOverrideField;
+        private bool _monthlyClosingFieldSpecified;
 
-        private bool creditHoldOverrideFieldSpecified;
+        private bool _overrideCurrencyFormatField;
 
-        private CustomerMonthlyClosing monthlyClosingField;
+        private bool _overrideCurrencyFormatFieldSpecified;
 
-        private bool monthlyClosingFieldSpecified;
+        private string _displaySymbolField;
 
-        private bool overrideCurrencyFormatField;
+        private bool _symbolPlacementFieldSpecified;
 
-        private bool overrideCurrencyFormatFieldSpecified;
+        private double _balanceField;
 
-        private string displaySymbolField;
+        private bool _balanceFieldSpecified;
 
-        private CurrencySymbolPlacement symbolPlacementField;
+        private double _overdueBalanceField;
 
-        private bool symbolPlacementFieldSpecified;
+        private bool _overdueBalanceFieldSpecified;
 
-        private double balanceField;
+        private long _daysOverdueField;
 
-        private bool balanceFieldSpecified;
+        private bool _daysOverdueFieldSpecified;
 
-        private double overdueBalanceField;
+        private double _unbilledOrdersField;
 
-        private bool overdueBalanceFieldSpecified;
+        private bool _unbilledOrdersFieldSpecified;
 
-        private long daysOverdueField;
+        private double _consolUnbilledOrdersField;
 
-        private bool daysOverdueFieldSpecified;
+        private bool _consolUnbilledOrdersFieldSpecified;
 
-        private double unbilledOrdersField;
+        private double _consolOverdueBalanceField;
 
-        private bool unbilledOrdersFieldSpecified;
+        private bool _consolOverdueBalanceFieldSpecified;
 
-        private double consolUnbilledOrdersField;
+        private double _consolDepositBalanceField;
 
-        private bool consolUnbilledOrdersFieldSpecified;
+        private bool _consolDepositBalanceFieldSpecified;
 
-        private double consolOverdueBalanceField;
+        private double _consolBalanceField;
 
-        private bool consolOverdueBalanceFieldSpecified;
+        private bool _consolBalanceFieldSpecified;
 
-        private double consolDepositBalanceField;
+        private double _consolAgingField;
 
-        private bool consolDepositBalanceFieldSpecified;
+        private bool _consolAgingFieldSpecified;
 
-        private double consolBalanceField;
+        private double _consolAging1Field;
 
-        private bool consolBalanceFieldSpecified;
+        private bool _consolAging1FieldSpecified;
 
-        private double consolAgingField;
+        private double _consolAging2Field;
 
-        private bool consolAgingFieldSpecified;
+        private bool _consolAging2FieldSpecified;
 
-        private double consolAging1Field;
+        private double _consolAging3Field;
 
-        private bool consolAging1FieldSpecified;
+        private bool _consolAging3FieldSpecified;
 
-        private double consolAging2Field;
+        private double _consolAging4Field;
 
-        private bool consolAging2FieldSpecified;
+        private bool _consolAging4FieldSpecified;
 
-        private double consolAging3Field;
+        private long _consolDaysOverdueField;
 
-        private bool consolAging3FieldSpecified;
+        private bool _consolDaysOverdueFieldSpecified;
 
-        private double consolAging4Field;
+        private RecordRef _priceLevelField;
 
-        private bool consolAging4FieldSpecified;
+        private RecordRef _prefCcProcessorField;
 
-        private long consolDaysOverdueField;
+        private double _depositBalanceField;
 
-        private bool consolDaysOverdueFieldSpecified;
+        private bool _depositBalanceFieldSpecified;
 
-        private RecordRef priceLevelField;
+        private bool _shipCompleteField;
 
-        private RecordRef currencyField;
+        private bool _shipCompleteFieldSpecified;
 
-        private RecordRef prefCCProcessorField;
+        private bool _taxableField;
 
-        private double depositBalanceField;
+        private bool _taxableFieldSpecified;
 
-        private bool depositBalanceFieldSpecified;
+        private RecordRef _taxItemField;
 
-        private bool shipCompleteField;
+        private string _resaleNumberField;
 
-        private bool shipCompleteFieldSpecified;
+        private double _agingField;
 
-        private bool taxableField;
+        private bool _agingFieldSpecified;
 
-        private bool taxableFieldSpecified;
+        private double _aging1Field;
 
-        private RecordRef taxItemField;
+        private bool _aging1FieldSpecified;
 
-        private string resaleNumberField;
+        private double _aging2Field;
 
-        private double agingField;
+        private bool _aging2FieldSpecified;
 
-        private bool agingFieldSpecified;
+        private double _aging3Field;
 
-        private double aging1Field;
+        private bool _aging3FieldSpecified;
 
-        private bool aging1FieldSpecified;
+        private double _aging4Field;
 
-        private double aging2Field;
+        private bool _aging4FieldSpecified;
 
-        private bool aging2FieldSpecified;
+        private DateTime _startDateField;
 
-        private double aging3Field;
+        private bool _startDateFieldSpecified;
 
-        private bool aging3FieldSpecified;
+        private bool _alcoholRecipientTypeFieldSpecified;
 
-        private double aging4Field;
+        private DateTime _endDateField;
 
-        private bool aging4FieldSpecified;
+        private bool _endDateFieldSpecified;
 
-        private System.DateTime startDateField;
+        private long _reminderDaysField;
 
-        private bool startDateFieldSpecified;
+        private bool _reminderDaysFieldSpecified;
 
-        private AlcoholRecipientType alcoholRecipientTypeField;
+        private RecordRef _shippingItemField;
 
-        private bool alcoholRecipientTypeFieldSpecified;
+        private string _thirdPartyAcctField;
 
-        private System.DateTime endDateField;
+        private string _thirdPartyZipcodeField;
 
-        private bool endDateFieldSpecified;
+        private bool _thirdPartyCountryFieldSpecified;
 
-        private long reminderDaysField;
+        private bool _giveAccessField;
 
-        private bool reminderDaysFieldSpecified;
+        private bool _giveAccessFieldSpecified;
 
-        private RecordRef shippingItemField;
+        private double _estimatedBudgetField;
 
-        private string thirdPartyAcctField;
+        private bool _estimatedBudgetFieldSpecified;
 
-        private string thirdPartyZipcodeField;
+        private RecordRef _accessRoleField;
 
-        private Country thirdPartyCountryField;
+        private bool _sendEmailField;
 
-        private bool thirdPartyCountryFieldSpecified;
+        private bool _sendEmailFieldSpecified;
 
-        private bool giveAccessField;
+        private RecordRef _assignedWebSiteField;
 
-        private bool giveAccessFieldSpecified;
+        private string _passwordField;
 
-        private double estimatedBudgetField;
+        private string _password2Field;
 
-        private bool estimatedBudgetFieldSpecified;
+        private bool _requirePwdChangeField;
 
-        private RecordRef accessRoleField;
+        private bool _requirePwdChangeFieldSpecified;
 
-        private bool sendEmailField;
+        private RecordRef _campaignCategoryField;
 
-        private bool sendEmailFieldSpecified;
+        private RecordRef _sourceWebSiteField;
 
-        private RecordRef assignedWebSiteField;
+        private RecordRef _leadSourceField;
 
-        private string passwordField;
+        private RecordRef _receivablesAccountField;
 
-        private string password2Field;
+        private RecordRef _drAccountField;
 
-        private bool requirePwdChangeField;
+        private RecordRef _fxAccountField;
 
-        private bool requirePwdChangeFieldSpecified;
+        private double _defaultOrderPriorityField;
 
-        private RecordRef campaignCategoryField;
+        private bool _defaultOrderPriorityFieldSpecified;
 
-        private RecordRef sourceWebSiteField;
+        private string _webLeadField;
 
-        private RecordRef leadSourceField;
+        private string _referrerField;
 
-        private RecordRef receivablesAccountField;
+        private string _keywordsField;
 
-        private RecordRef drAccountField;
+        private string _clickStreamField;
 
-        private RecordRef fxAccountField;
+        private string _lastPageVisitedField;
 
-        private double defaultOrderPriorityField;
+        private long _visitsField;
 
-        private bool defaultOrderPriorityFieldSpecified;
+        private bool _visitsFieldSpecified;
 
-        private string webLeadField;
+        private DateTime _firstVisitField;
 
-        private string referrerField;
+        private bool _firstVisitFieldSpecified;
 
-        private string keywordsField;
+        private DateTime _lastVisitField;
 
-        private string clickStreamField;
+        private bool _lastVisitFieldSpecified;
 
-        private string lastPageVisitedField;
+        private bool _billPayField;
 
-        private long visitsField;
+        private bool _billPayFieldSpecified;
 
-        private bool visitsFieldSpecified;
+        private double _openingBalanceField;
 
-        private System.DateTime firstVisitField;
+        private bool _openingBalanceFieldSpecified;
 
-        private bool firstVisitFieldSpecified;
+        private DateTime _lastModifiedDateField;
 
-        private System.DateTime lastVisitField;
+        private bool _lastModifiedDateFieldSpecified;
 
-        private bool lastVisitFieldSpecified;
+        private DateTime _openingBalanceDateField;
 
-        private bool billPayField;
+        private bool _openingBalanceDateFieldSpecified;
 
-        private bool billPayFieldSpecified;
+        private RecordRef _openingBalanceAccountField;
 
-        private double openingBalanceField;
+        private CustomerStage _stageField;
 
-        private bool openingBalanceFieldSpecified;
+        private bool _stageFieldSpecified;
 
-        private System.DateTime lastModifiedDateField;
+        private bool _emailTransactionsField;
 
-        private bool lastModifiedDateFieldSpecified;
+        private bool _emailTransactionsFieldSpecified;
 
-        private System.DateTime openingBalanceDateField;
+        private bool _printTransactionsField;
 
-        private bool openingBalanceDateFieldSpecified;
+        private bool _printTransactionsFieldSpecified;
 
-        private RecordRef openingBalanceAccountField;
+        private bool _faxTransactionsField;
 
-        private CustomerStage stageField;
+        private bool _faxTransactionsFieldSpecified;
 
-        private bool stageFieldSpecified;
+        private RecordRef _defaultTaxRegField;
 
-        private bool emailTransactionsField;
+        private bool _syncPartnerTeamsField;
 
-        private bool emailTransactionsFieldSpecified;
+        private bool _syncPartnerTeamsFieldSpecified;
 
-        private bool printTransactionsField;
+        private bool _isBudgetApprovedField;
 
-        private bool printTransactionsFieldSpecified;
+        private bool _isBudgetApprovedFieldSpecified;
 
-        private bool faxTransactionsField;
+        private GlobalSubscriptionStatus _globalSubscriptionStatusField;
 
-        private bool faxTransactionsFieldSpecified;
+        private bool _globalSubscriptionStatusFieldSpecified;
 
-        private RecordRef defaultTaxRegField;
+        private RecordRef _salesReadinessField;
 
-        private bool syncPartnerTeamsField;
+        private CustomerSalesTeamList _salesTeamListField;
 
-        private bool syncPartnerTeamsFieldSpecified;
+        private RecordRef _buyingReasonField;
 
-        private bool isBudgetApprovedField;
+        private CustomerDownloadList _downloadListField;
 
-        private bool isBudgetApprovedFieldSpecified;
+        private RecordRef _buyingTimeFrameField;
 
-        private GlobalSubscriptionStatus globalSubscriptionStatusField;
+        private CustomerAddressbookList _addressbookListField;
 
-        private bool globalSubscriptionStatusFieldSpecified;
+        private SubscriptionsList _subscriptionsListField;
 
-        private RecordRef salesReadinessField;
+        private ContactAccessRolesList _contactRolesListField;
 
-        private CustomerSalesTeamList salesTeamListField;
+        private CustomerCurrencyList _currencyListField;
 
-        private RecordRef buyingReasonField;
+        private CustomerCreditCardsList _creditCardsListField;
 
-        private CustomerDownloadList downloadListField;
+        private CustomerPartnersList _partnersListField;
 
-        private RecordRef buyingTimeFrameField;
+        private CustomerGroupPricingList _groupPricingListField;
 
-        private CustomerAddressbookList addressbookListField;
+        private CustomerItemPricingList _itemPricingListField;
 
-        private SubscriptionsList subscriptionsListField;
+        private CustomerTaxRegistrationList _taxRegistrationListField;
 
-        private ContactAccessRolesList contactRolesListField;
+        private RecordRef _defaultAllocationStrategyField;
 
-        private CustomerCurrencyList currencyListField;
+        private CustomFieldRef[] _customFieldListField;
 
-        private CustomerCreditCardsList creditCardsListField;
+        private string _internalIdField;
 
-        private CustomerPartnersList partnersListField;
+        private string _externalIdField;
+        
+        public string ShipAddressee { get; set; }
+        public string ShipAddr1 { get; set; }
+        public string ShipAddr2 { get; set; }
+        public string ShipAddr3 { get; set; }       
+        public string ShipCity { get; set; }
+        public string ShipState { get; set; }
+        public string ShipZip { get; set; }
+        public string ShipCountry { get; set; }
+        public string BillAddressee { get; set; }
+        public string BillAddr1 { get; set; }
+        public string BillAddr2 { get; set; }
+        public string BillAddr3 { get; set; }
+        public string BillCity { get; set; }
+        public string BillState { get; set; }
+        public string BillZip { get; set; }
+        public string BillCountry { get; set; }
 
-        private CustomerGroupPricingList groupPricingListField;
-
-        private CustomerItemPricingList itemPricingListField;
-
-        private CustomerTaxRegistrationList taxRegistrationListField;
-
-        private RecordRef defaultAllocationStrategyField;
-
-        private CustomFieldRef[] customFieldListField;
-
-        private string internalIdField;
-
-        private string externalIdField;
-
-        /// <remarks/>
-        public RecordRef customForm {
-            get {
-                return this.customFormField;
-            }
-            set {
-                this.customFormField = value;
-            }
-        }
-
-        /// <remarks/>
-        public string entityId {
-            get {
-                return this.entityIdField;
-            }
-            set {
-                this.entityIdField = value;
-            }
-        }
-
-        /// <remarks/>
-        public string altName {
-            get {
-                return this.altNameField;
-            }
-            set {
-                this.altNameField = value;
-            }
-        }
-
-        /// <remarks/>
-        public bool isPerson {
-            get {
-                return this.isPersonField;
-            }
-            set {
-                this.isPersonField = value;
-            }
-        }
-
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool isPersonSpecified {
-            get {
-                return this.isPersonFieldSpecified;
-            }
-            set {
-                this.isPersonFieldSpecified = value;
-            }
-        }
-
-        /// <remarks/>
-        public string phoneticName {
-            get {
-                return this.phoneticNameField;
-            }
-            set {
-                this.phoneticNameField = value;
-            }
-        }
-
-        /// <remarks/>
-        public string salutation {
-            get {
-                return this.salutationField;
-            }
-            set {
-                this.salutationField = value;
-            }
-        }
-
         /// <remarks/>
-        public string firstName {
-            get {
-                return this.firstNameField;
-            }
-            set {
-                this.firstNameField = value;
-            }
+        public RecordRef CustomForm {
+            get => _customFormField;
+            set => _customFormField = value;
         }
 
         /// <remarks/>
-        public string middleName {
-            get {
-                return this.middleNameField;
-            }
-            set {
-                this.middleNameField = value;
-            }
+        public string EntityId {
+            get => _entityIdField;
+            set => _entityIdField = value;
         }
 
         /// <remarks/>
-        public string lastName {
-            get {
-                return this.lastNameField;
-            }
-            set {
-                this.lastNameField = value;
-            }
+        public string AltName {
+            get => _altNameField;
+            set => _altNameField = value;
         }
 
         /// <remarks/>
-        public string companyName {
-            get {
-                return this.companyNameField;
-            }
-            set {
-                this.companyNameField = value;
-            }
+        public bool IsPerson {
+            get => _isPersonField;
+            set => _isPersonField = value;
         }
 
         /// <remarks/>
-        public RecordRef entityStatus {
-            get {
-                return this.entityStatusField;
-            }
-            set {
-                this.entityStatusField = value;
-            }
+        [XmlIgnoreAttribute()]
+        public bool IsPersonSpecified {
+            get => _isPersonFieldSpecified;
+            set => _isPersonFieldSpecified = value;
         }
 
         /// <remarks/>
-        public RecordRef parent {
-            get {
-                return this.parentField;
-            }
-            set {
-                this.parentField = value;
-            }
+        public string PhoneticName {
+            get => _phoneticNameField;
+            set => _phoneticNameField = value;
         }
 
         /// <remarks/>
-        public string phone {
-            get {
-                return this.phoneField;
-            }
-            set {
-                this.phoneField = value;
-            }
+        public string Salutation {
+            get => _salutationField;
+            set => _salutationField = value;
         }
 
         /// <remarks/>
-        public string fax {
-            get {
-                return this.faxField;
-            }
-            set {
-                this.faxField = value;
-            }
+        public string FirstName {
+            get => _firstNameField;
+            set => _firstNameField = value;
         }
 
         /// <remarks/>
-        public string email {
-            get {
-                return this.emailField;
-            }
-            set {
-                this.emailField = value;
-            }
+        public string MiddleName {
+            get => _middleNameField;
+            set => _middleNameField = value;
         }
 
         /// <remarks/>
-        public string url {
-            get {
-                return this.urlField;
-            }
-            set {
-                this.urlField = value;
-            }
+        public string LastName {
+            get => _lastNameField;
+            set => _lastNameField = value;
         }
 
         /// <remarks/>
-        public string defaultAddress {
-            get {
-                return this.defaultAddressField;
-            }
-            set {
-                this.defaultAddressField = value;
-            }
+        public string CompanyName {
+            get => _companyNameField;
+            set => _companyNameField = value;
         }
 
         /// <remarks/>
-        public bool isInactive {
-            get {
-                return this.isInactiveField;
-            }
-            set {
-                this.isInactiveField = value;
-            }
+        public RecordRef EntityStatus {
+            get => _entityStatusField;
+            set => _entityStatusField = value;
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool isInactiveSpecified {
-            get {
-                return this.isInactiveFieldSpecified;
-            }
-            set {
-                this.isInactiveFieldSpecified = value;
-            }
+        public RecordRef Parent {
+            get => _parentField;
+            set => _parentField = value;
         }
 
         /// <remarks/>
-        public RecordRef category {
-            get {
-                return this.categoryField;
-            }
-            set {
-                this.categoryField = value;
-            }
+        public string Phone {
+            get => _phoneField;
+            set => _phoneField = value;
         }
 
         /// <remarks/>
-        public string title {
-            get {
-                return this.titleField;
-            }
-            set {
-                this.titleField = value;
-            }
+        public string Fax {
+            get => _faxField;
+            set => _faxField = value;
         }
 
         /// <remarks/>
-        public string printOnCheckAs {
-            get {
-                return this.printOnCheckAsField;
-            }
-            set {
-                this.printOnCheckAsField = value;
-            }
+        public string Email {
+            get => _emailField;
+            set => _emailField = value;
         }
 
         /// <remarks/>
-        public string altPhone {
-            get {
-                return this.altPhoneField;
-            }
-            set {
-                this.altPhoneField = value;
-            }
+        public string Url {
+            get => _urlField;
+            set => _urlField = value;
         }
 
         /// <remarks/>
-        public string homePhone {
-            get {
-                return this.homePhoneField;
-            }
-            set {
-                this.homePhoneField = value;
-            }
+        public string DefaultAddress {
+            get => _defaultAddressField;
+            set => _defaultAddressField = value;
         }
 
         /// <remarks/>
-        public string mobilePhone {
-            get {
-                return this.mobilePhoneField;
-            }
-            set {
-                this.mobilePhoneField = value;
-            }
+        public bool IsInactive {
+            get => _isInactiveField;
+            set => _isInactiveField = value;
         }
 
         /// <remarks/>
-        public string altEmail {
-            get {
-                return this.altEmailField;
-            }
-            set {
-                this.altEmailField = value;
-            }
+        [XmlIgnoreAttribute()]
+        public bool IsInactiveSpecified {
+            get => _isInactiveFieldSpecified;
+            set => _isInactiveFieldSpecified = value;
         }
 
         /// <remarks/>
-        public Language language {
-            get {
-                return this.languageField;
-            }
-            set {
-                this.languageField = value;
-            }
+        public RecordRef Category {
+            get => _categoryField;
+            set => _categoryField = value;
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool languageSpecified {
-            get {
-                return this.languageFieldSpecified;
-            }
-            set {
-                this.languageFieldSpecified = value;
-            }
+        public string Title {
+            get => _titleField;
+            set => _titleField = value;
         }
 
         /// <remarks/>
-        public string comments {
-            get {
-                return this.commentsField;
-            }
-            set {
-                this.commentsField = value;
-            }
+        public string PrintOnCheckAs {
+            get => _printOnCheckAsField;
+            set => _printOnCheckAsField = value;
         }
 
         /// <remarks/>
-        public CustomerNumberFormat numberFormat {
-            get {
-                return this.numberFormatField;
-            }
-            set {
-                this.numberFormatField = value;
-            }
+        public string AltPhone {
+            get => _altPhoneField;
+            set => _altPhoneField = value;
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool numberFormatSpecified {
-            get {
-                return this.numberFormatFieldSpecified;
-            }
-            set {
-                this.numberFormatFieldSpecified = value;
-            }
+        public string HomePhone {
+            get => _homePhoneField;
+            set => _homePhoneField = value;
         }
 
         /// <remarks/>
-        public CustomerNegativeNumberFormat negativeNumberFormat {
-            get {
-                return this.negativeNumberFormatField;
-            }
-            set {
-                this.negativeNumberFormatField = value;
-            }
+        public string MobilePhone {
+            get => _mobilePhoneField;
+            set => _mobilePhoneField = value;
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool negativeNumberFormatSpecified {
-            get {
-                return this.negativeNumberFormatFieldSpecified;
-            }
-            set {
-                this.negativeNumberFormatFieldSpecified = value;
-            }
+        public string AltEmail {
+            get => _altEmailField;
+            set => _altEmailField = value;
         }
 
         /// <remarks/>
-        public System.DateTime dateCreated {
-            get {
-                return this.dateCreatedField;
-            }
-            set {
-                this.dateCreatedField = value;
-            }
+        public string Language {
+            get => _languageField;
+            set => _languageField = value;
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool dateCreatedSpecified {
-            get {
-                return this.dateCreatedFieldSpecified;
-            }
-            set {
-                this.dateCreatedFieldSpecified = value;
-            }
+        [XmlIgnoreAttribute()]
+        public bool LanguageSpecified {
+            get => _languageFieldSpecified;
+            set => _languageFieldSpecified = value;
         }
 
         /// <remarks/>
-        public RecordRef image {
-            get {
-                return this.imageField;
-            }
-            set {
-                this.imageField = value;
-            }
+        public string Comments {
+            get => _commentsField;
+            set => _commentsField = value;
         }
 
         /// <remarks/>
-        public EmailPreference emailPreference {
-            get {
-                return this.emailPreferenceField;
-            }
-            set {
-                this.emailPreferenceField = value;
-            }
+        [XmlIgnoreAttribute()]
+        public bool NumberFormatSpecified {
+            get => _numberFormatFieldSpecified;
+            set => _numberFormatFieldSpecified = value;
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool emailPreferenceSpecified {
-            get {
-                return this.emailPreferenceFieldSpecified;
-            }
-            set {
-                this.emailPreferenceFieldSpecified = value;
-            }
+        [XmlIgnoreAttribute()]
+        public bool NegativeNumberFormatSpecified {
+            get => _negativeNumberFormatFieldSpecified;
+            set => _negativeNumberFormatFieldSpecified = value;
         }
 
         /// <remarks/>
-        public RecordRef subsidiary {
-            get {
-                return this.subsidiaryField;
-            }
-            set {
-                this.subsidiaryField = value;
-            }
+        public DateTime DateCreated {
+            get => _dateCreatedField;
+            set => _dateCreatedField = value;
         }
 
         /// <remarks/>
-        public RecordRef representingSubsidiary {
-            get {
-                return this.representingSubsidiaryField;
-            }
-            set {
-                this.representingSubsidiaryField = value;
-            }
+        [XmlIgnoreAttribute()]
+        public bool DateCreatedSpecified {
+            get => _dateCreatedFieldSpecified;
+            set => _dateCreatedFieldSpecified = value;
         }
 
         /// <remarks/>
-        public RecordRef salesRep {
-            get {
-                return this.salesRepField;
-            }
-            set {
-                this.salesRepField = value;
-            }
+        public RecordRef Image {
+            get => _imageField;
+            set => _imageField = value;
         }
 
         /// <remarks/>
-        public RecordRef territory {
-            get {
-                return this.territoryField;
-            }
-            set {
-                this.territoryField = value;
-            }
+        public EmailPreference EmailPreference {
+            get => _emailPreferenceField;
+            set => _emailPreferenceField = value;
         }
 
         /// <remarks/>
-        public string contribPct {
-            get {
-                return this.contribPctField;
-            }
-            set {
-                this.contribPctField = value;
-            }
+        [XmlIgnoreAttribute()]
+        public bool EmailPreferenceSpecified {
+            get => _emailPreferenceFieldSpecified;
+            set => _emailPreferenceFieldSpecified = value;
         }
 
         /// <remarks/>
-        public RecordRef partner {
-            get {
-                return this.partnerField;
-            }
-            set {
-                this.partnerField = value;
-            }
+        public RecordRef Subsidiary {
+            get => _subsidiaryField;
+            set => _subsidiaryField = value;
         }
 
         /// <remarks/>
-        public RecordRef salesGroup {
-            get {
-                return this.salesGroupField;
-            }
-            set {
-                this.salesGroupField = value;
-            }
+        public RecordRef RepresentingSubsidiary {
+            get => _representingSubsidiaryField;
+            set => _representingSubsidiaryField = value;
         }
 
         /// <remarks/>
-        public string vatRegNumber {
-            get {
-                return this.vatRegNumberField;
-            }
-            set {
-                this.vatRegNumberField = value;
-            }
+        public RecordRef SalesRep {
+            get => _salesRepField;
+            set => _salesRepField = value;
         }
 
         /// <remarks/>
-        public string accountNumber {
-            get {
-                return this.accountNumberField;
-            }
-            set {
-                this.accountNumberField = value;
-            }
+        public RecordRef Territory {
+            get => _territoryField;
+            set => _territoryField = value;
         }
 
         /// <remarks/>
-        public bool taxExempt {
-            get {
-                return this.taxExemptField;
-            }
-            set {
-                this.taxExemptField = value;
-            }
+        public string ContribPct {
+            get => _contribPctField;
+            set => _contribPctField = value;
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool taxExemptSpecified {
-            get {
-                return this.taxExemptFieldSpecified;
-            }
-            set {
-                this.taxExemptFieldSpecified = value;
-            }
+        public RecordRef Partner {
+            get => _partnerField;
+            set => _partnerField = value;
         }
 
         /// <remarks/>
-        public RecordRef terms {
-            get {
-                return this.termsField;
-            }
-            set {
-                this.termsField = value;
-            }
+        public RecordRef SalesGroup {
+            get => _salesGroupField;
+            set => _salesGroupField = value;
         }
 
         /// <remarks/>
-        public double creditLimit {
-            get {
-                return this.creditLimitField;
-            }
-            set {
-                this.creditLimitField = value;
-            }
+        public string VatRegNumber {
+            get => _vatRegNumberField;
+            set => _vatRegNumberField = value;
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool creditLimitSpecified {
-            get {
-                return this.creditLimitFieldSpecified;
-            }
-            set {
-                this.creditLimitFieldSpecified = value;
-            }
+        public string AccountNumber {
+            get => _accountNumberField;
+            set => _accountNumberField = value;
         }
 
         /// <remarks/>
-        public CustomerCreditHoldOverride creditHoldOverride {
-            get {
-                return this.creditHoldOverrideField;
-            }
-            set {
-                this.creditHoldOverrideField = value;
-            }
+        public bool TaxExempt {
+            get => _taxExemptField;
+            set => _taxExemptField = value;
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool creditHoldOverrideSpecified {
-            get {
-                return this.creditHoldOverrideFieldSpecified;
-            }
-            set {
-                this.creditHoldOverrideFieldSpecified = value;
-            }
+        [XmlIgnoreAttribute()]
+        public bool TaxExemptSpecified {
+            get => _taxExemptFieldSpecified;
+            set => _taxExemptFieldSpecified = value;
         }
 
         /// <remarks/>
-        public CustomerMonthlyClosing monthlyClosing {
-            get {
-                return this.monthlyClosingField;
-            }
-            set {
-                this.monthlyClosingField = value;
-            }
+        public RecordRef Terms {
+            get => _termsField;
+            set => _termsField = value;
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool monthlyClosingSpecified {
-            get {
-                return this.monthlyClosingFieldSpecified;
-            }
-            set {
-                this.monthlyClosingFieldSpecified = value;
-            }
+        public double CreditLimit {
+            get => _creditLimitField;
+            set => _creditLimitField = value;
         }
 
         /// <remarks/>
-        public bool overrideCurrencyFormat {
-            get {
-                return this.overrideCurrencyFormatField;
-            }
-            set {
-                this.overrideCurrencyFormatField = value;
-            }
+        [XmlIgnoreAttribute()]
+        public bool CreditLimitSpecified {
+            get => _creditLimitFieldSpecified;
+            set => _creditLimitFieldSpecified = value;
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool overrideCurrencyFormatSpecified {
-            get {
-                return this.overrideCurrencyFormatFieldSpecified;
-            }
-            set {
-                this.overrideCurrencyFormatFieldSpecified = value;
-            }
+        public CustomerCreditHoldOverride CreditHoldOverride {
+            get => _creditHoldOverrideField;
+            set => _creditHoldOverrideField = value;
         }
 
         /// <remarks/>
-        public string displaySymbol {
-            get {
-                return this.displaySymbolField;
-            }
-            set {
-                this.displaySymbolField = value;
-            }
+        [XmlIgnoreAttribute()]
+        public bool CreditHoldOverrideSpecified {
+            get => _creditHoldOverrideFieldSpecified;
+            set => _creditHoldOverrideFieldSpecified = value;
         }
 
         /// <remarks/>
-        public CurrencySymbolPlacement symbolPlacement {
-            get {
-                return this.symbolPlacementField;
-            }
-            set {
-                this.symbolPlacementField = value;
-            }
+        [XmlIgnoreAttribute()]
+        public bool MonthlyClosingSpecified {
+            get => _monthlyClosingFieldSpecified;
+            set => _monthlyClosingFieldSpecified = value;
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool symbolPlacementSpecified {
-            get {
-                return this.symbolPlacementFieldSpecified;
-            }
-            set {
-                this.symbolPlacementFieldSpecified = value;
-            }
+        public bool OverrideCurrencyFormat {
+            get => _overrideCurrencyFormatField;
+            set => _overrideCurrencyFormatField = value;
         }
 
         /// <remarks/>
-        public double balance {
-            get {
-                return this.balanceField;
-            }
-            set {
-                this.balanceField = value;
-            }
+        [XmlIgnoreAttribute()]
+        public bool OverrideCurrencyFormatSpecified {
+            get => _overrideCurrencyFormatFieldSpecified;
+            set => _overrideCurrencyFormatFieldSpecified = value;
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool balanceSpecified {
-            get {
-                return this.balanceFieldSpecified;
-            }
-            set {
-                this.balanceFieldSpecified = value;
-            }
+        public string DisplaySymbol {
+            get => _displaySymbolField;
+            set => _displaySymbolField = value;
         }
 
         /// <remarks/>
-        public double overdueBalance {
-            get {
-                return this.overdueBalanceField;
-            }
-            set {
-                this.overdueBalanceField = value;
-            }
+        [XmlIgnoreAttribute()]
+        public bool SymbolPlacementSpecified {
+            get => _symbolPlacementFieldSpecified;
+            set => _symbolPlacementFieldSpecified = value;
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool overdueBalanceSpecified {
-            get {
-                return this.overdueBalanceFieldSpecified;
-            }
-            set {
-                this.overdueBalanceFieldSpecified = value;
-            }
+        public double Balance {
+            get => _balanceField;
+            set => _balanceField = value;
         }
 
         /// <remarks/>
-        public long daysOverdue {
-            get {
-                return this.daysOverdueField;
-            }
-            set {
-                this.daysOverdueField = value;
-            }
+        [XmlIgnoreAttribute()]
+        public bool BalanceSpecified {
+            get => _balanceFieldSpecified;
+            set => _balanceFieldSpecified = value;
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool daysOverdueSpecified {
-            get {
-                return this.daysOverdueFieldSpecified;
-            }
-            set {
-                this.daysOverdueFieldSpecified = value;
-            }
+        public double OverdueBalance {
+            get => _overdueBalanceField;
+            set => _overdueBalanceField = value;
         }
 
         /// <remarks/>
-        public double unbilledOrders {
-            get {
-                return this.unbilledOrdersField;
-            }
-            set {
-                this.unbilledOrdersField = value;
-            }
+        [XmlIgnoreAttribute()]
+        public bool OverdueBalanceSpecified {
+            get => _overdueBalanceFieldSpecified;
+            set => _overdueBalanceFieldSpecified = value;
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool unbilledOrdersSpecified {
-            get {
-                return this.unbilledOrdersFieldSpecified;
-            }
-            set {
-                this.unbilledOrdersFieldSpecified = value;
-            }
+        public long DaysOverdue {
+            get => _daysOverdueField;
+            set => _daysOverdueField = value;
         }
 
         /// <remarks/>
-        public double consolUnbilledOrders {
-            get {
-                return this.consolUnbilledOrdersField;
-            }
-            set {
-                this.consolUnbilledOrdersField = value;
-            }
+        [XmlIgnoreAttribute()]
+        public bool DaysOverdueSpecified {
+            get => _daysOverdueFieldSpecified;
+            set => _daysOverdueFieldSpecified = value;
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool consolUnbilledOrdersSpecified {
-            get {
-                return this.consolUnbilledOrdersFieldSpecified;
-            }
-            set {
-                this.consolUnbilledOrdersFieldSpecified = value;
-            }
+        public double UnbilledOrders {
+            get => _unbilledOrdersField;
+            set => _unbilledOrdersField = value;
         }
 
         /// <remarks/>
-        public double consolOverdueBalance {
-            get {
-                return this.consolOverdueBalanceField;
-            }
-            set {
-                this.consolOverdueBalanceField = value;
-            }
+        [XmlIgnoreAttribute()]
+        public bool UnbilledOrdersSpecified {
+            get => _unbilledOrdersFieldSpecified;
+            set => _unbilledOrdersFieldSpecified = value;
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool consolOverdueBalanceSpecified {
-            get {
-                return this.consolOverdueBalanceFieldSpecified;
-            }
-            set {
-                this.consolOverdueBalanceFieldSpecified = value;
-            }
+        public double ConsolUnbilledOrders {
+            get => _consolUnbilledOrdersField;
+            set => _consolUnbilledOrdersField = value;
         }
 
         /// <remarks/>
-        public double consolDepositBalance {
-            get {
-                return this.consolDepositBalanceField;
-            }
-            set {
-                this.consolDepositBalanceField = value;
-            }
+        [XmlIgnoreAttribute()]
+        public bool ConsolUnbilledOrdersSpecified {
+            get => _consolUnbilledOrdersFieldSpecified;
+            set => _consolUnbilledOrdersFieldSpecified = value;
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool consolDepositBalanceSpecified {
-            get {
-                return this.consolDepositBalanceFieldSpecified;
-            }
-            set {
-                this.consolDepositBalanceFieldSpecified = value;
-            }
+        public double ConsolOverdueBalance {
+            get => _consolOverdueBalanceField;
+            set => _consolOverdueBalanceField = value;
         }
 
         /// <remarks/>
-        public double consolBalance {
-            get {
-                return this.consolBalanceField;
-            }
-            set {
-                this.consolBalanceField = value;
-            }
+        [XmlIgnoreAttribute()]
+        public bool ConsolOverdueBalanceSpecified {
+            get => _consolOverdueBalanceFieldSpecified;
+            set => _consolOverdueBalanceFieldSpecified = value;
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool consolBalanceSpecified {
-            get {
-                return this.consolBalanceFieldSpecified;
-            }
-            set {
-                this.consolBalanceFieldSpecified = value;
-            }
+        public double ConsolDepositBalance {
+            get => _consolDepositBalanceField;
+            set => _consolDepositBalanceField = value;
         }
 
         /// <remarks/>
-        public double consolAging {
-            get {
-                return this.consolAgingField;
-            }
-            set {
-                this.consolAgingField = value;
-            }
+        [XmlIgnoreAttribute()]
+        public bool ConsolDepositBalanceSpecified {
+            get => _consolDepositBalanceFieldSpecified;
+            set => _consolDepositBalanceFieldSpecified = value;
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool consolAgingSpecified {
-            get {
-                return this.consolAgingFieldSpecified;
-            }
-            set {
-                this.consolAgingFieldSpecified = value;
-            }
+        public double ConsolBalance {
+            get => _consolBalanceField;
+            set => _consolBalanceField = value;
         }
 
         /// <remarks/>
-        public double consolAging1 {
-            get {
-                return this.consolAging1Field;
-            }
-            set {
-                this.consolAging1Field = value;
-            }
+        [XmlIgnoreAttribute()]
+        public bool ConsolBalanceSpecified {
+            get => _consolBalanceFieldSpecified;
+            set => _consolBalanceFieldSpecified = value;
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool consolAging1Specified {
-            get {
-                return this.consolAging1FieldSpecified;
-            }
-            set {
-                this.consolAging1FieldSpecified = value;
-            }
+        public double ConsolAging {
+            get => _consolAgingField;
+            set => _consolAgingField = value;
         }
 
         /// <remarks/>
-        public double consolAging2 {
-            get {
-                return this.consolAging2Field;
-            }
-            set {
-                this.consolAging2Field = value;
-            }
+        [XmlIgnoreAttribute()]
+        public bool ConsolAgingSpecified {
+            get => _consolAgingFieldSpecified;
+            set => _consolAgingFieldSpecified = value;
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool consolAging2Specified {
-            get {
-                return this.consolAging2FieldSpecified;
-            }
-            set {
-                this.consolAging2FieldSpecified = value;
-            }
+        public double ConsolAging1 {
+            get => _consolAging1Field;
+            set => _consolAging1Field = value;
         }
 
         /// <remarks/>
-        public double consolAging3 {
-            get {
-                return this.consolAging3Field;
-            }
-            set {
-                this.consolAging3Field = value;
-            }
+        [XmlIgnoreAttribute()]
+        public bool ConsolAging1Specified {
+            get => _consolAging1FieldSpecified;
+            set => _consolAging1FieldSpecified = value;
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool consolAging3Specified {
-            get {
-                return this.consolAging3FieldSpecified;
-            }
-            set {
-                this.consolAging3FieldSpecified = value;
-            }
+        public double ConsolAging2 {
+            get => _consolAging2Field;
+            set => _consolAging2Field = value;
         }
 
         /// <remarks/>
-        public double consolAging4 {
-            get {
-                return this.consolAging4Field;
-            }
-            set {
-                this.consolAging4Field = value;
-            }
+        [XmlIgnoreAttribute()]
+        public bool ConsolAging2Specified {
+            get => _consolAging2FieldSpecified;
+            set => _consolAging2FieldSpecified = value;
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool consolAging4Specified {
-            get {
-                return this.consolAging4FieldSpecified;
-            }
-            set {
-                this.consolAging4FieldSpecified = value;
-            }
+        public double ConsolAging3 {
+            get => _consolAging3Field;
+            set => _consolAging3Field = value;
         }
 
         /// <remarks/>
-        public long consolDaysOverdue {
-            get {
-                return this.consolDaysOverdueField;
-            }
-            set {
-                this.consolDaysOverdueField = value;
-            }
+        [XmlIgnoreAttribute()]
+        public bool ConsolAging3Specified {
+            get => _consolAging3FieldSpecified;
+            set => _consolAging3FieldSpecified = value;
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool consolDaysOverdueSpecified {
-            get {
-                return this.consolDaysOverdueFieldSpecified;
-            }
-            set {
-                this.consolDaysOverdueFieldSpecified = value;
-            }
+        public double ConsolAging4 {
+            get => _consolAging4Field;
+            set => _consolAging4Field = value;
         }
 
         /// <remarks/>
-        public RecordRef priceLevel {
-            get {
-                return this.priceLevelField;
-            }
-            set {
-                this.priceLevelField = value;
-            }
+        [XmlIgnoreAttribute()]
+        public bool ConsolAging4Specified {
+            get => _consolAging4FieldSpecified;
+            set => _consolAging4FieldSpecified = value;
         }
 
         /// <remarks/>
-        public RecordRef currency {
-            get {
-                return this.currencyField;
-            }
-            set {
-                this.currencyField = value;
-            }
+        public long ConsolDaysOverdue {
+            get => _consolDaysOverdueField;
+            set => _consolDaysOverdueField = value;
         }
 
         /// <remarks/>
-        public RecordRef prefCCProcessor {
-            get {
-                return this.prefCCProcessorField;
-            }
-            set {
-                this.prefCCProcessorField = value;
-            }
+        [XmlIgnoreAttribute()]
+        public bool ConsolDaysOverdueSpecified {
+            get => _consolDaysOverdueFieldSpecified;
+            set => _consolDaysOverdueFieldSpecified = value;
         }
 
         /// <remarks/>
-        public double depositBalance {
-            get {
-                return this.depositBalanceField;
-            }
-            set {
-                this.depositBalanceField = value;
-            }
+        public RecordRef PriceLevel {
+            get => _priceLevelField;
+            set => _priceLevelField = value;
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool depositBalanceSpecified {
-            get {
-                return this.depositBalanceFieldSpecified;
-            }
-            set {
-                this.depositBalanceFieldSpecified = value;
-            }
+        public RecordRef PrefCcProcessor {
+            get => _prefCcProcessorField;
+            set => _prefCcProcessorField = value;
         }
 
         /// <remarks/>
-        public bool shipComplete {
-            get {
-                return this.shipCompleteField;
-            }
-            set {
-                this.shipCompleteField = value;
-            }
+        public double DepositBalance {
+            get => _depositBalanceField;
+            set => _depositBalanceField = value;
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool shipCompleteSpecified {
-            get {
-                return this.shipCompleteFieldSpecified;
-            }
-            set {
-                this.shipCompleteFieldSpecified = value;
-            }
+        [XmlIgnoreAttribute()]
+        public bool DepositBalanceSpecified {
+            get => _depositBalanceFieldSpecified;
+            set => _depositBalanceFieldSpecified = value;
         }
 
         /// <remarks/>
-        public bool taxable {
-            get {
-                return this.taxableField;
-            }
-            set {
-                this.taxableField = value;
-            }
+        public bool ShipComplete {
+            get => _shipCompleteField;
+            set => _shipCompleteField = value;
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool taxableSpecified {
-            get {
-                return this.taxableFieldSpecified;
-            }
-            set {
-                this.taxableFieldSpecified = value;
-            }
+        [XmlIgnoreAttribute()]
+        public bool ShipCompleteSpecified {
+            get => _shipCompleteFieldSpecified;
+            set => _shipCompleteFieldSpecified = value;
         }
 
         /// <remarks/>
-        public RecordRef taxItem {
-            get {
-                return this.taxItemField;
-            }
-            set {
-                this.taxItemField = value;
-            }
+        public bool Taxable {
+            get => _taxableField;
+            set => _taxableField = value;
         }
 
         /// <remarks/>
-        public string resaleNumber {
-            get {
-                return this.resaleNumberField;
-            }
-            set {
-                this.resaleNumberField = value;
-            }
+        [XmlIgnoreAttribute()]
+        public bool TaxableSpecified {
+            get => _taxableFieldSpecified;
+            set => _taxableFieldSpecified = value;
         }
 
         /// <remarks/>
-        public double aging {
-            get {
-                return this.agingField;
-            }
-            set {
-                this.agingField = value;
-            }
+        public RecordRef TaxItem {
+            get => _taxItemField;
+            set => _taxItemField = value;
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool agingSpecified {
-            get {
-                return this.agingFieldSpecified;
-            }
-            set {
-                this.agingFieldSpecified = value;
-            }
+        public string ResaleNumber {
+            get => _resaleNumberField;
+            set => _resaleNumberField = value;
         }
 
         /// <remarks/>
-        public double aging1 {
-            get {
-                return this.aging1Field;
-            }
-            set {
-                this.aging1Field = value;
-            }
+        public double Aging {
+            get => _agingField;
+            set => _agingField = value;
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool aging1Specified {
-            get {
-                return this.aging1FieldSpecified;
-            }
-            set {
-                this.aging1FieldSpecified = value;
-            }
+        [XmlIgnoreAttribute()]
+        public bool AgingSpecified {
+            get => _agingFieldSpecified;
+            set => _agingFieldSpecified = value;
         }
 
         /// <remarks/>
-        public double aging2 {
-            get {
-                return this.aging2Field;
-            }
-            set {
-                this.aging2Field = value;
-            }
+        public double Aging1 {
+            get => _aging1Field;
+            set => _aging1Field = value;
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool aging2Specified {
-            get {
-                return this.aging2FieldSpecified;
-            }
-            set {
-                this.aging2FieldSpecified = value;
-            }
+        [XmlIgnoreAttribute()]
+        public bool Aging1Specified {
+            get => _aging1FieldSpecified;
+            set => _aging1FieldSpecified = value;
         }
 
         /// <remarks/>
-        public double aging3 {
-            get {
-                return this.aging3Field;
-            }
-            set {
-                this.aging3Field = value;
-            }
+        public double Aging2 {
+            get => _aging2Field;
+            set => _aging2Field = value;
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool aging3Specified {
-            get {
-                return this.aging3FieldSpecified;
-            }
-            set {
-                this.aging3FieldSpecified = value;
-            }
+        [XmlIgnoreAttribute()]
+        public bool Aging2Specified {
+            get => _aging2FieldSpecified;
+            set => _aging2FieldSpecified = value;
         }
 
         /// <remarks/>
-        public double aging4 {
-            get {
-                return this.aging4Field;
-            }
-            set {
-                this.aging4Field = value;
-            }
+        public double Aging3 {
+            get => _aging3Field;
+            set => _aging3Field = value;
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool aging4Specified {
-            get {
-                return this.aging4FieldSpecified;
-            }
-            set {
-                this.aging4FieldSpecified = value;
-            }
+        [XmlIgnoreAttribute()]
+        public bool Aging3Specified {
+            get => _aging3FieldSpecified;
+            set => _aging3FieldSpecified = value;
         }
 
         /// <remarks/>
-        public System.DateTime startDate {
-            get {
-                return this.startDateField;
-            }
-            set {
-                this.startDateField = value;
-            }
+        public double Aging4 {
+            get => _aging4Field;
+            set => _aging4Field = value;
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool startDateSpecified {
-            get {
-                return this.startDateFieldSpecified;
-            }
-            set {
-                this.startDateFieldSpecified = value;
-            }
+        [XmlIgnoreAttribute()]
+        public bool Aging4Specified {
+            get => _aging4FieldSpecified;
+            set => _aging4FieldSpecified = value;
         }
 
         /// <remarks/>
-        public AlcoholRecipientType alcoholRecipientType {
-            get {
-                return this.alcoholRecipientTypeField;
-            }
-            set {
-                this.alcoholRecipientTypeField = value;
-            }
+        public DateTime StartDate {
+            get => _startDateField;
+            set => _startDateField = value;
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool alcoholRecipientTypeSpecified {
-            get {
-                return this.alcoholRecipientTypeFieldSpecified;
-            }
-            set {
-                this.alcoholRecipientTypeFieldSpecified = value;
-            }
+        [XmlIgnoreAttribute()]
+        public bool StartDateSpecified {
+            get => _startDateFieldSpecified;
+            set => _startDateFieldSpecified = value;
         }
 
         /// <remarks/>
-        public System.DateTime endDate {
-            get {
-                return this.endDateField;
-            }
-            set {
-                this.endDateField = value;
-            }
+        [XmlIgnoreAttribute()]
+        public bool AlcoholRecipientTypeSpecified {
+            get => _alcoholRecipientTypeFieldSpecified;
+            set => _alcoholRecipientTypeFieldSpecified = value;
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool endDateSpecified {
-            get {
-                return this.endDateFieldSpecified;
-            }
-            set {
-                this.endDateFieldSpecified = value;
-            }
+        public DateTime EndDate {
+            get => _endDateField;
+            set => _endDateField = value;
         }
 
         /// <remarks/>
-        public long reminderDays {
-            get {
-                return this.reminderDaysField;
-            }
-            set {
-                this.reminderDaysField = value;
-            }
+        [XmlIgnoreAttribute()]
+        public bool EndDateSpecified {
+            get => _endDateFieldSpecified;
+            set => _endDateFieldSpecified = value;
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool reminderDaysSpecified {
-            get {
-                return this.reminderDaysFieldSpecified;
-            }
-            set {
-                this.reminderDaysFieldSpecified = value;
-            }
+        public long ReminderDays {
+            get => _reminderDaysField;
+            set => _reminderDaysField = value;
         }
 
         /// <remarks/>
-        public RecordRef shippingItem {
-            get {
-                return this.shippingItemField;
-            }
-            set {
-                this.shippingItemField = value;
-            }
+        [XmlIgnoreAttribute()]
+        public bool ReminderDaysSpecified {
+            get => _reminderDaysFieldSpecified;
+            set => _reminderDaysFieldSpecified = value;
         }
 
         /// <remarks/>
-        public string thirdPartyAcct {
-            get {
-                return this.thirdPartyAcctField;
-            }
-            set {
-                this.thirdPartyAcctField = value;
-            }
+        public RecordRef ShippingItem {
+            get => _shippingItemField;
+            set => _shippingItemField = value;
         }
 
         /// <remarks/>
-        public string thirdPartyZipcode {
-            get {
-                return this.thirdPartyZipcodeField;
-            }
-            set {
-                this.thirdPartyZipcodeField = value;
-            }
+        public string ThirdPartyAcct {
+            get => _thirdPartyAcctField;
+            set => _thirdPartyAcctField = value;
         }
 
         /// <remarks/>
-        public Country thirdPartyCountry {
-            get {
-                return this.thirdPartyCountryField;
-            }
-            set {
-                this.thirdPartyCountryField = value;
-            }
+        public string ThirdPartyZipcode {
+            get => _thirdPartyZipcodeField;
+            set => _thirdPartyZipcodeField = value;
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool thirdPartyCountrySpecified {
-            get {
-                return this.thirdPartyCountryFieldSpecified;
-            }
-            set {
-                this.thirdPartyCountryFieldSpecified = value;
-            }
+        [XmlIgnoreAttribute()]
+        public bool ThirdPartyCountrySpecified {
+            get => _thirdPartyCountryFieldSpecified;
+            set => _thirdPartyCountryFieldSpecified = value;
         }
 
         /// <remarks/>
-        public bool giveAccess {
-            get {
-                return this.giveAccessField;
-            }
-            set {
-                this.giveAccessField = value;
-            }
+        public bool GiveAccess {
+            get => _giveAccessField;
+            set => _giveAccessField = value;
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool giveAccessSpecified {
-            get {
-                return this.giveAccessFieldSpecified;
-            }
-            set {
-                this.giveAccessFieldSpecified = value;
-            }
+        [XmlIgnoreAttribute()]
+        public bool GiveAccessSpecified {
+            get => _giveAccessFieldSpecified;
+            set => _giveAccessFieldSpecified = value;
         }
 
         /// <remarks/>
-        public double estimatedBudget {
-            get {
-                return this.estimatedBudgetField;
-            }
-            set {
-                this.estimatedBudgetField = value;
-            }
+        public double EstimatedBudget {
+            get => _estimatedBudgetField;
+            set => _estimatedBudgetField = value;
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool estimatedBudgetSpecified {
-            get {
-                return this.estimatedBudgetFieldSpecified;
-            }
-            set {
-                this.estimatedBudgetFieldSpecified = value;
-            }
+        [XmlIgnoreAttribute()]
+        public bool EstimatedBudgetSpecified {
+            get => _estimatedBudgetFieldSpecified;
+            set => _estimatedBudgetFieldSpecified = value;
         }
 
         /// <remarks/>
-        public RecordRef accessRole {
-            get {
-                return this.accessRoleField;
-            }
-            set {
-                this.accessRoleField = value;
-            }
+        public RecordRef AccessRole {
+            get => _accessRoleField;
+            set => _accessRoleField = value;
         }
 
         /// <remarks/>
-        public bool sendEmail {
-            get {
-                return this.sendEmailField;
-            }
-            set {
-                this.sendEmailField = value;
-            }
+        public bool SendEmail {
+            get => _sendEmailField;
+            set => _sendEmailField = value;
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool sendEmailSpecified {
-            get {
-                return this.sendEmailFieldSpecified;
-            }
-            set {
-                this.sendEmailFieldSpecified = value;
-            }
+        [XmlIgnoreAttribute()]
+        public bool SendEmailSpecified {
+            get => _sendEmailFieldSpecified;
+            set => _sendEmailFieldSpecified = value;
         }
 
         /// <remarks/>
-        public RecordRef assignedWebSite {
-            get {
-                return this.assignedWebSiteField;
-            }
-            set {
-                this.assignedWebSiteField = value;
-            }
+        public RecordRef AssignedWebSite {
+            get => _assignedWebSiteField;
+            set => _assignedWebSiteField = value;
         }
 
         /// <remarks/>
-        public string password {
-            get {
-                return this.passwordField;
-            }
-            set {
-                this.passwordField = value;
-            }
+        public string Password {
+            get => _passwordField;
+            set => _passwordField = value;
         }
 
         /// <remarks/>
-        public string password2 {
-            get {
-                return this.password2Field;
-            }
-            set {
-                this.password2Field = value;
-            }
+        public string Password2 {
+            get => _password2Field;
+            set => _password2Field = value;
         }
 
         /// <remarks/>
-        public bool requirePwdChange {
-            get {
-                return this.requirePwdChangeField;
-            }
-            set {
-                this.requirePwdChangeField = value;
-            }
+        public bool RequirePwdChange {
+            get => _requirePwdChangeField;
+            set => _requirePwdChangeField = value;
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool requirePwdChangeSpecified {
-            get {
-                return this.requirePwdChangeFieldSpecified;
-            }
-            set {
-                this.requirePwdChangeFieldSpecified = value;
-            }
+        [XmlIgnoreAttribute()]
+        public bool RequirePwdChangeSpecified {
+            get => _requirePwdChangeFieldSpecified;
+            set => _requirePwdChangeFieldSpecified = value;
         }
 
         /// <remarks/>
-        public RecordRef campaignCategory {
-            get {
-                return this.campaignCategoryField;
-            }
-            set {
-                this.campaignCategoryField = value;
-            }
+        public RecordRef CampaignCategory {
+            get => _campaignCategoryField;
+            set => _campaignCategoryField = value;
         }
 
         /// <remarks/>
-        public RecordRef sourceWebSite {
-            get {
-                return this.sourceWebSiteField;
-            }
-            set {
-                this.sourceWebSiteField = value;
-            }
+        public RecordRef SourceWebSite {
+            get => _sourceWebSiteField;
+            set => _sourceWebSiteField = value;
         }
 
         /// <remarks/>
-        public RecordRef leadSource {
-            get {
-                return this.leadSourceField;
-            }
-            set {
-                this.leadSourceField = value;
-            }
+        public RecordRef LeadSource {
+            get => _leadSourceField;
+            set => _leadSourceField = value;
         }
 
         /// <remarks/>
-        public RecordRef receivablesAccount {
-            get {
-                return this.receivablesAccountField;
-            }
-            set {
-                this.receivablesAccountField = value;
-            }
+        public RecordRef ReceivablesAccount {
+            get => _receivablesAccountField;
+            set => _receivablesAccountField = value;
         }
 
         /// <remarks/>
-        public RecordRef drAccount {
-            get {
-                return this.drAccountField;
-            }
-            set {
-                this.drAccountField = value;
-            }
+        public RecordRef DrAccount {
+            get => _drAccountField;
+            set => _drAccountField = value;
         }
 
         /// <remarks/>
-        public RecordRef fxAccount {
-            get {
-                return this.fxAccountField;
-            }
-            set {
-                this.fxAccountField = value;
-            }
+        public RecordRef FxAccount {
+            get => _fxAccountField;
+            set => _fxAccountField = value;
         }
 
         /// <remarks/>
-        public double defaultOrderPriority {
-            get {
-                return this.defaultOrderPriorityField;
-            }
-            set {
-                this.defaultOrderPriorityField = value;
-            }
+        public double DefaultOrderPriority {
+            get => _defaultOrderPriorityField;
+            set => _defaultOrderPriorityField = value;
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool defaultOrderPrioritySpecified {
-            get {
-                return this.defaultOrderPriorityFieldSpecified;
-            }
-            set {
-                this.defaultOrderPriorityFieldSpecified = value;
-            }
+        [XmlIgnoreAttribute()]
+        public bool DefaultOrderPrioritySpecified {
+            get => _defaultOrderPriorityFieldSpecified;
+            set => _defaultOrderPriorityFieldSpecified = value;
         }
 
         /// <remarks/>
-        public string webLead {
-            get {
-                return this.webLeadField;
-            }
-            set {
-                this.webLeadField = value;
-            }
+        public string WebLead {
+            get => _webLeadField;
+            set => _webLeadField = value;
         }
 
         /// <remarks/>
-        public string referrer {
-            get {
-                return this.referrerField;
-            }
-            set {
-                this.referrerField = value;
-            }
+        public string Referrer {
+            get => _referrerField;
+            set => _referrerField = value;
         }
 
         /// <remarks/>
-        public string keywords {
-            get {
-                return this.keywordsField;
-            }
-            set {
-                this.keywordsField = value;
-            }
+        public string Keywords {
+            get => _keywordsField;
+            set => _keywordsField = value;
         }
 
         /// <remarks/>
-        public string clickStream {
-            get {
-                return this.clickStreamField;
-            }
-            set {
-                this.clickStreamField = value;
-            }
+        public string ClickStream {
+            get => _clickStreamField;
+            set => _clickStreamField = value;
         }
 
         /// <remarks/>
-        public string lastPageVisited {
-            get {
-                return this.lastPageVisitedField;
-            }
-            set {
-                this.lastPageVisitedField = value;
-            }
+        public string LastPageVisited {
+            get => _lastPageVisitedField;
+            set => _lastPageVisitedField = value;
         }
 
         /// <remarks/>
-        public long visits {
-            get {
-                return this.visitsField;
-            }
-            set {
-                this.visitsField = value;
-            }
+        public long Visits {
+            get => _visitsField;
+            set => _visitsField = value;
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool visitsSpecified {
-            get {
-                return this.visitsFieldSpecified;
-            }
-            set {
-                this.visitsFieldSpecified = value;
-            }
+        [XmlIgnoreAttribute()]
+        public bool VisitsSpecified {
+            get => _visitsFieldSpecified;
+            set => _visitsFieldSpecified = value;
         }
 
         /// <remarks/>
-        public System.DateTime firstVisit {
-            get {
-                return this.firstVisitField;
-            }
-            set {
-                this.firstVisitField = value;
-            }
+        public DateTime FirstVisit {
+            get => _firstVisitField;
+            set => _firstVisitField = value;
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool firstVisitSpecified {
-            get {
-                return this.firstVisitFieldSpecified;
-            }
-            set {
-                this.firstVisitFieldSpecified = value;
-            }
+        [XmlIgnoreAttribute()]
+        public bool FirstVisitSpecified {
+            get => _firstVisitFieldSpecified;
+            set => _firstVisitFieldSpecified = value;
         }
 
         /// <remarks/>
-        public System.DateTime lastVisit {
-            get {
-                return this.lastVisitField;
-            }
-            set {
-                this.lastVisitField = value;
-            }
+        public DateTime LastVisit {
+            get => _lastVisitField;
+            set => _lastVisitField = value;
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool lastVisitSpecified {
-            get {
-                return this.lastVisitFieldSpecified;
-            }
-            set {
-                this.lastVisitFieldSpecified = value;
-            }
+        [XmlIgnoreAttribute()]
+        public bool LastVisitSpecified {
+            get => _lastVisitFieldSpecified;
+            set => _lastVisitFieldSpecified = value;
         }
 
         /// <remarks/>
-        public bool billPay {
-            get {
-                return this.billPayField;
-            }
-            set {
-                this.billPayField = value;
-            }
+        public bool BillPay {
+            get => _billPayField;
+            set => _billPayField = value;
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool billPaySpecified {
-            get {
-                return this.billPayFieldSpecified;
-            }
-            set {
-                this.billPayFieldSpecified = value;
-            }
+        [XmlIgnoreAttribute()]
+        public bool BillPaySpecified {
+            get => _billPayFieldSpecified;
+            set => _billPayFieldSpecified = value;
         }
 
         /// <remarks/>
-        public double openingBalance {
-            get {
-                return this.openingBalanceField;
-            }
-            set {
-                this.openingBalanceField = value;
-            }
+        public double OpeningBalance {
+            get => _openingBalanceField;
+            set => _openingBalanceField = value;
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool openingBalanceSpecified {
-            get {
-                return this.openingBalanceFieldSpecified;
-            }
-            set {
-                this.openingBalanceFieldSpecified = value;
-            }
+        [XmlIgnoreAttribute()]
+        public bool OpeningBalanceSpecified {
+            get => _openingBalanceFieldSpecified;
+            set => _openingBalanceFieldSpecified = value;
         }
 
         /// <remarks/>
-        public System.DateTime lastModifiedDate {
-            get {
-                return this.lastModifiedDateField;
-            }
-            set {
-                this.lastModifiedDateField = value;
-            }
+        public DateTime LastModifiedDate {
+            get => _lastModifiedDateField;
+            set => _lastModifiedDateField = value;
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool lastModifiedDateSpecified {
-            get {
-                return this.lastModifiedDateFieldSpecified;
-            }
-            set {
-                this.lastModifiedDateFieldSpecified = value;
-            }
+        [XmlIgnoreAttribute()]
+        public bool LastModifiedDateSpecified {
+            get => _lastModifiedDateFieldSpecified;
+            set => _lastModifiedDateFieldSpecified = value;
         }
 
         /// <remarks/>
-        public System.DateTime openingBalanceDate {
-            get {
-                return this.openingBalanceDateField;
-            }
-            set {
-                this.openingBalanceDateField = value;
-            }
+        public DateTime OpeningBalanceDate {
+            get => _openingBalanceDateField;
+            set => _openingBalanceDateField = value;
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool openingBalanceDateSpecified {
-            get {
-                return this.openingBalanceDateFieldSpecified;
-            }
-            set {
-                this.openingBalanceDateFieldSpecified = value;
-            }
+        [XmlIgnoreAttribute()]
+        public bool OpeningBalanceDateSpecified {
+            get => _openingBalanceDateFieldSpecified;
+            set => _openingBalanceDateFieldSpecified = value;
         }
 
         /// <remarks/>
-        public RecordRef openingBalanceAccount {
-            get {
-                return this.openingBalanceAccountField;
-            }
-            set {
-                this.openingBalanceAccountField = value;
-            }
+        public RecordRef OpeningBalanceAccount {
+            get => _openingBalanceAccountField;
+            set => _openingBalanceAccountField = value;
         }
 
         /// <remarks/>
-        public CustomerStage stage {
-            get {
-                return this.stageField;
-            }
-            set {
-                this.stageField = value;
-            }
+        public CustomerStage Stage {
+            get => _stageField;
+            set => _stageField = value;
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool stageSpecified {
-            get {
-                return this.stageFieldSpecified;
-            }
-            set {
-                this.stageFieldSpecified = value;
-            }
+        [XmlIgnoreAttribute()]
+        public bool StageSpecified {
+            get => _stageFieldSpecified;
+            set => _stageFieldSpecified = value;
         }
 
         /// <remarks/>
-        public bool emailTransactions {
-            get {
-                return this.emailTransactionsField;
-            }
-            set {
-                this.emailTransactionsField = value;
-            }
+        public bool EmailTransactions {
+            get => _emailTransactionsField;
+            set => _emailTransactionsField = value;
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool emailTransactionsSpecified {
-            get {
-                return this.emailTransactionsFieldSpecified;
-            }
-            set {
-                this.emailTransactionsFieldSpecified = value;
-            }
+        [XmlIgnoreAttribute()]
+        public bool EmailTransactionsSpecified {
+            get => _emailTransactionsFieldSpecified;
+            set => _emailTransactionsFieldSpecified = value;
         }
 
         /// <remarks/>
-        public bool printTransactions {
-            get {
-                return this.printTransactionsField;
-            }
-            set {
-                this.printTransactionsField = value;
-            }
+        public bool PrintTransactions {
+            get => _printTransactionsField;
+            set => _printTransactionsField = value;
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool printTransactionsSpecified {
-            get {
-                return this.printTransactionsFieldSpecified;
-            }
-            set {
-                this.printTransactionsFieldSpecified = value;
-            }
+        [XmlIgnoreAttribute()]
+        public bool PrintTransactionsSpecified {
+            get => _printTransactionsFieldSpecified;
+            set => _printTransactionsFieldSpecified = value;
         }
 
         /// <remarks/>
-        public bool faxTransactions {
-            get {
-                return this.faxTransactionsField;
-            }
-            set {
-                this.faxTransactionsField = value;
-            }
+        public bool FaxTransactions {
+            get => _faxTransactionsField;
+            set => _faxTransactionsField = value;
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool faxTransactionsSpecified {
-            get {
-                return this.faxTransactionsFieldSpecified;
-            }
-            set {
-                this.faxTransactionsFieldSpecified = value;
-            }
+        [XmlIgnoreAttribute()]
+        public bool FaxTransactionsSpecified {
+            get => _faxTransactionsFieldSpecified;
+            set => _faxTransactionsFieldSpecified = value;
         }
 
         /// <remarks/>
-        public RecordRef defaultTaxReg {
-            get {
-                return this.defaultTaxRegField;
-            }
-            set {
-                this.defaultTaxRegField = value;
-            }
+        public RecordRef DefaultTaxReg {
+            get => _defaultTaxRegField;
+            set => _defaultTaxRegField = value;
         }
 
         /// <remarks/>
-        public bool syncPartnerTeams {
-            get {
-                return this.syncPartnerTeamsField;
-            }
-            set {
-                this.syncPartnerTeamsField = value;
-            }
+        public bool SyncPartnerTeams {
+            get => _syncPartnerTeamsField;
+            set => _syncPartnerTeamsField = value;
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool syncPartnerTeamsSpecified {
-            get {
-                return this.syncPartnerTeamsFieldSpecified;
-            }
-            set {
-                this.syncPartnerTeamsFieldSpecified = value;
-            }
+        [XmlIgnoreAttribute()]
+        public bool SyncPartnerTeamsSpecified {
+            get => _syncPartnerTeamsFieldSpecified;
+            set => _syncPartnerTeamsFieldSpecified = value;
         }
 
         /// <remarks/>
-        public bool isBudgetApproved {
-            get {
-                return this.isBudgetApprovedField;
-            }
-            set {
-                this.isBudgetApprovedField = value;
-            }
+        public bool IsBudgetApproved {
+            get => _isBudgetApprovedField;
+            set => _isBudgetApprovedField = value;
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool isBudgetApprovedSpecified {
-            get {
-                return this.isBudgetApprovedFieldSpecified;
-            }
-            set {
-                this.isBudgetApprovedFieldSpecified = value;
-            }
+        [XmlIgnoreAttribute()]
+        public bool IsBudgetApprovedSpecified {
+            get => _isBudgetApprovedFieldSpecified;
+            set => _isBudgetApprovedFieldSpecified = value;
         }
 
         /// <remarks/>
-        public GlobalSubscriptionStatus globalSubscriptionStatus {
-            get {
-                return this.globalSubscriptionStatusField;
-            }
-            set {
-                this.globalSubscriptionStatusField = value;
-            }
+        public GlobalSubscriptionStatus GlobalSubscriptionStatus {
+            get => _globalSubscriptionStatusField;
+            set => _globalSubscriptionStatusField = value;
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool globalSubscriptionStatusSpecified {
-            get {
-                return this.globalSubscriptionStatusFieldSpecified;
-            }
-            set {
-                this.globalSubscriptionStatusFieldSpecified = value;
-            }
+        [XmlIgnoreAttribute()]
+        public bool GlobalSubscriptionStatusSpecified {
+            get => _globalSubscriptionStatusFieldSpecified;
+            set => _globalSubscriptionStatusFieldSpecified = value;
         }
 
         /// <remarks/>
-        public RecordRef salesReadiness {
-            get {
-                return this.salesReadinessField;
-            }
-            set {
-                this.salesReadinessField = value;
-            }
+        public RecordRef SalesReadiness {
+            get => _salesReadinessField;
+            set => _salesReadinessField = value;
         }
 
         /// <remarks/>
-        public CustomerSalesTeamList salesTeamList {
-            get {
-                return this.salesTeamListField;
-            }
-            set {
-                this.salesTeamListField = value;
-            }
+        public CustomerSalesTeamList SalesTeamList {
+            get => _salesTeamListField;
+            set => _salesTeamListField = value;
         }
 
         /// <remarks/>
-        public RecordRef buyingReason {
-            get {
-                return this.buyingReasonField;
-            }
-            set {
-                this.buyingReasonField = value;
-            }
+        public RecordRef BuyingReason {
+            get => _buyingReasonField;
+            set => _buyingReasonField = value;
         }
 
         /// <remarks/>
-        public CustomerDownloadList downloadList {
-            get {
-                return this.downloadListField;
-            }
-            set {
-                this.downloadListField = value;
-            }
+        public CustomerDownloadList DownloadList {
+            get => _downloadListField;
+            set => _downloadListField = value;
         }
 
         /// <remarks/>
-        public RecordRef buyingTimeFrame {
-            get {
-                return this.buyingTimeFrameField;
-            }
-            set {
-                this.buyingTimeFrameField = value;
-            }
+        public RecordRef BuyingTimeFrame {
+            get => _buyingTimeFrameField;
+            set => _buyingTimeFrameField = value;
         }
 
         /// <remarks/>
-        public CustomerAddressbookList addressbookList {
-            get {
-                return this.addressbookListField;
-            }
-            set {
-                this.addressbookListField = value;
-            }
+        public CustomerAddressbookList AddressbookList {
+            get => _addressbookListField;
+            set => _addressbookListField = value;
         }
 
         /// <remarks/>
-        public SubscriptionsList subscriptionsList {
-            get {
-                return this.subscriptionsListField;
-            }
-            set {
-                this.subscriptionsListField = value;
-            }
+        public SubscriptionsList SubscriptionsList {
+            get => _subscriptionsListField;
+            set => _subscriptionsListField = value;
         }
 
         /// <remarks/>
-        public ContactAccessRolesList contactRolesList {
-            get {
-                return this.contactRolesListField;
-            }
-            set {
-                this.contactRolesListField = value;
-            }
+        public ContactAccessRolesList ContactRolesList {
+            get => _contactRolesListField;
+            set => _contactRolesListField = value;
         }
 
         /// <remarks/>
-        public CustomerCurrencyList currencyList {
-            get {
-                return this.currencyListField;
-            }
-            set {
-                this.currencyListField = value;
-            }
+        public CustomerCurrencyList CurrencyList {
+            get => _currencyListField;
+            set => _currencyListField = value;
         }
 
         /// <remarks/>
-        public CustomerCreditCardsList creditCardsList {
-            get {
-                return this.creditCardsListField;
-            }
-            set {
-                this.creditCardsListField = value;
-            }
+        public CustomerCreditCardsList CreditCardsList {
+            get => _creditCardsListField;
+            set => _creditCardsListField = value;
         }
 
         /// <remarks/>
-        public CustomerPartnersList partnersList {
-            get {
-                return this.partnersListField;
-            }
-            set {
-                this.partnersListField = value;
-            }
+        public CustomerPartnersList PartnersList {
+            get => _partnersListField;
+            set => _partnersListField = value;
         }
 
         /// <remarks/>
-        public CustomerGroupPricingList groupPricingList {
-            get {
-                return this.groupPricingListField;
-            }
-            set {
-                this.groupPricingListField = value;
-            }
+        public CustomerGroupPricingList GroupPricingList {
+            get => _groupPricingListField;
+            set => _groupPricingListField = value;
         }
 
         /// <remarks/>
-        public CustomerItemPricingList itemPricingList {
-            get {
-                return this.itemPricingListField;
-            }
-            set {
-                this.itemPricingListField = value;
-            }
+        public CustomerItemPricingList ItemPricingList {
+            get => _itemPricingListField;
+            set => _itemPricingListField = value;
         }
 
         /// <remarks/>
-        public CustomerTaxRegistrationList taxRegistrationList {
-            get {
-                return this.taxRegistrationListField;
-            }
-            set {
-                this.taxRegistrationListField = value;
-            }
+        public CustomerTaxRegistrationList TaxRegistrationList {
+            get => _taxRegistrationListField;
+            set => _taxRegistrationListField = value;
         }
 
         /// <remarks/>
-        public RecordRef defaultAllocationStrategy {
-            get {
-                return this.defaultAllocationStrategyField;
-            }
-            set {
-                this.defaultAllocationStrategyField = value;
-            }
+        public RecordRef DefaultAllocationStrategy {
+            get => _defaultAllocationStrategyField;
+            set => _defaultAllocationStrategyField = value;
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlArrayItemAttribute("customField", Namespace="urn:core_2021_1.platform.webservices.netsuite.com", IsNullable=false)]
-        public CustomFieldRef[] customFieldList {
-            get {
-                return this.customFieldListField;
-            }
-            set {
-                this.customFieldListField = value;
-            }
+        [XmlArrayItemAttribute("customField", Namespace="urn:core_2021_1.platform.webservices.netsuite.com", IsNullable=false)]
+        public CustomFieldRef[] CustomFieldList {
+            get => _customFieldListField;
+            set => _customFieldListField = value;
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string internalId {
-            get {
-                return this.internalIdField;
-            }
-            set {
-                this.internalIdField = value;
-            }
+        [XmlAttributeAttribute()]
+        public string InternalId {
+            get => _internalIdField;
+            set => _internalIdField = value;
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string externalId {
-            get {
-                return this.externalIdField;
-            }
-            set {
-                this.externalIdField = value;
-            }
+        [XmlAttributeAttribute()]
+        public string ExternalId {
+            get => _externalIdField;
+            set => _externalIdField = value;
         }
     }
 }
