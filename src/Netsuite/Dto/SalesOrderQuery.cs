@@ -41,6 +41,7 @@ namespace Netsuite.Dto
         public string ShipAddressZip { get; set; }
         public string ShipAddressCountry { get; set; }
         public string ShipAddressPhone { get; set; }
+        public string OtherRefNum { get; set; }
         public string CustBody_DN_SO_CustomField1 { get; set; }
         public string CustBody_DN_SO_CustomField2 { get; set; }
         public string CustBody_DN_SO_CustomField3 { get; set; }
