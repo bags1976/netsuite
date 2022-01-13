@@ -336,6 +336,16 @@ namespace Netsuite.Dto
         public DateTime NextBillDate { get; set; }
         public string Entity { get; set; }
         public DateTime? ShipDate { get; set; }
+        public string CustBody_DN_SO_CustomField1 { get; set; }
+        public string CustBody_DN_SO_CustomField2 { get; set; }
+        public string CustBody_DN_SO_CustomField3 { get; set; }
+        public string CustBody_DN_SO_CustomField4 { get; set; }
+        public string CustBody_DN_SO_CustomField5 { get; set; }
+        public string CustBody_DN_SO_CustomField6 { get; set; }
+        public string CustBody_DN_SO_CustomField7 { get; set; }
+        public string CustBody_DN_SO_CustomField8 { get; set; }
+        public string CustBody_DN_SO_CustomField9 { get; set; }
+        public string CustBody_DN_SO_CustomField10 { get; set; }
 
         #region public auto genereated
 

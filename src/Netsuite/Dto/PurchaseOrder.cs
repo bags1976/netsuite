@@ -1,21 +1,25 @@
-using System.Collections.Generic;
+using System;
+using System.CodeDom.Compiler;
+using System.ComponentModel;
+using System.Diagnostics;
+using System.Xml.Serialization;
 using Netsuite.Enum;
 
 namespace Netsuite.Dto
 {
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("wsdl", "4.8.3928.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:purchases_2021_1.transactions.webservices.netsuite.com")]
+    [GeneratedCode("wsdl", "4.8.3928.0")]
+    [Serializable()]
+    [DebuggerStepThrough()]
+    [DesignerCategory("code")]
+    [XmlType(Namespace="urn:purchases_2021_1.transactions.webservices.netsuite.com")]
     public partial class PurchaseOrder : Record {
 
-        private System.DateTime createdDateField;
+        private DateTime createdDateField;
 
         private bool createdDateFieldSpecified;
 
-        private System.DateTime lastModifiedDateField;
+        private DateTime lastModifiedDateField;
 
         private bool lastModifiedDateFieldSpecified;
 
@@ -45,7 +49,7 @@ namespace Netsuite.Dto
 
         private bool supervisorApprovalFieldSpecified;
 
-        private System.DateTime tranDateField;
+        private DateTime tranDateField;
 
         private bool tranDateFieldSpecified;
 
@@ -53,7 +57,7 @@ namespace Netsuite.Dto
 
         private RecordRef entityTaxRegNumField;
 
-        private System.DateTime taxPointDateField;
+        private DateTime taxPointDateField;
 
         private bool taxPointDateFieldSpecified;
 
@@ -61,7 +65,7 @@ namespace Netsuite.Dto
 
         private RecordRef termsField;
 
-        private System.DateTime dueDateField;
+        private DateTime dueDateField;
 
         private bool dueDateFieldSpecified;
 
@@ -133,7 +137,7 @@ namespace Netsuite.Dto
 
         private string fobField;
 
-        private System.DateTime shipDateField;
+        private DateTime shipDateField;
 
         private bool shipDateFieldSpecified;
 
@@ -179,10 +183,21 @@ namespace Netsuite.Dto
 
         private string externalIdField;
         
+        public string CustBody_DN_PO_CustomField1 { get; set; }
+        public string CustBody_DN_PO_CustomField2 { get; set; }
+        public string CustBody_DN_PO_CustomField3 { get; set; }
+        public string CustBody_DN_PO_CustomField4 { get; set; }
+        public string CustBody_DN_PO_CustomField5 { get; set; }
+        public string CustBody_DN_PO_CustomField6 { get; set; }
+        public string CustBody_DN_PO_CustomField7 { get; set; }
+        public string CustBody_DN_PO_CustomField8 { get; set; }
+        public string CustBody_DN_PO_CustomField9 { get; set; }
+        public string CustBody_DN_PO_CustomField10 { get; set; }
+        
         public bool Void { get; set; }
         
         /// <remarks/>
-        public System.DateTime createdDate {
+        public DateTime createdDate {
             get {
                 return this.createdDateField;
             }
@@ -192,7 +207,7 @@ namespace Netsuite.Dto
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        [XmlIgnore()]
         public bool createdDateSpecified {
             get {
                 return this.createdDateFieldSpecified;
@@ -203,7 +218,7 @@ namespace Netsuite.Dto
         }
 
         /// <remarks/>
-        public System.DateTime lastModifiedDate {
+        public DateTime lastModifiedDate {
             get {
                 return this.lastModifiedDateField;
             }
@@ -213,7 +228,7 @@ namespace Netsuite.Dto
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        [XmlIgnore()]
         public bool lastModifiedDateSpecified {
             get {
                 return this.lastModifiedDateFieldSpecified;
@@ -254,7 +269,7 @@ namespace Netsuite.Dto
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        [XmlIgnore()]
         public bool taxRegOverrideSpecified {
             get {
                 return this.taxRegOverrideFieldSpecified;
@@ -275,7 +290,7 @@ namespace Netsuite.Dto
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        [XmlIgnore()]
         public bool taxDetailsOverrideSpecified {
             get {
                 return this.taxDetailsOverrideFieldSpecified;
@@ -346,7 +361,7 @@ namespace Netsuite.Dto
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        [XmlIgnore()]
         public bool supervisorApprovalSpecified {
             get {
                 return this.supervisorApprovalFieldSpecified;
@@ -357,7 +372,7 @@ namespace Netsuite.Dto
         }
 
         /// <remarks/>
-        public System.DateTime tranDate {
+        public DateTime tranDate {
             get {
                 return this.tranDateField;
             }
@@ -367,7 +382,7 @@ namespace Netsuite.Dto
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        [XmlIgnore()]
         public bool tranDateSpecified {
             get {
                 return this.tranDateFieldSpecified;
@@ -398,7 +413,7 @@ namespace Netsuite.Dto
         }
 
         /// <remarks/>
-        public System.DateTime taxPointDate {
+        public DateTime taxPointDate {
             get {
                 return this.taxPointDateField;
             }
@@ -408,7 +423,7 @@ namespace Netsuite.Dto
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        [XmlIgnore()]
         public bool taxPointDateSpecified {
             get {
                 return this.taxPointDateFieldSpecified;
@@ -439,7 +454,7 @@ namespace Netsuite.Dto
         }
 
         /// <remarks/>
-        public System.DateTime dueDate {
+        public DateTime dueDate {
             get {
                 return this.dueDateField;
             }
@@ -449,7 +464,7 @@ namespace Netsuite.Dto
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        [XmlIgnore()]
         public bool dueDateSpecified {
             get {
                 return this.dueDateFieldSpecified;
@@ -480,7 +495,7 @@ namespace Netsuite.Dto
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        [XmlIgnore()]
         public bool availableVendorCreditSpecified {
             get {
                 return this.availableVendorCreditFieldSpecified;
@@ -521,7 +536,7 @@ namespace Netsuite.Dto
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        [XmlIgnore()]
         public bool exchangeRateSpecified {
             get {
                 return this.exchangeRateFieldSpecified;
@@ -572,7 +587,7 @@ namespace Netsuite.Dto
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        [XmlIgnore()]
         public bool toBePrintedSpecified {
             get {
                 return this.toBePrintedFieldSpecified;
@@ -593,7 +608,7 @@ namespace Netsuite.Dto
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        [XmlIgnore()]
         public bool toBeEmailedSpecified {
             get {
                 return this.toBeEmailedFieldSpecified;
@@ -624,7 +639,7 @@ namespace Netsuite.Dto
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        [XmlIgnore()]
         public bool toBeFaxedSpecified {
             get {
                 return this.toBeFaxedFieldSpecified;
@@ -705,7 +720,7 @@ namespace Netsuite.Dto
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        [XmlIgnore()]
         public bool subTotalSpecified {
             get {
                 return this.subTotalFieldSpecified;
@@ -726,7 +741,7 @@ namespace Netsuite.Dto
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        [XmlIgnore()]
         public bool taxTotalSpecified {
             get {
                 return this.taxTotalFieldSpecified;
@@ -747,7 +762,7 @@ namespace Netsuite.Dto
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        [XmlIgnore()]
         public bool tax2TotalSpecified {
             get {
                 return this.tax2TotalFieldSpecified;
@@ -778,7 +793,7 @@ namespace Netsuite.Dto
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        [XmlIgnore()]
         public bool shipIsResidentialSpecified {
             get {
                 return this.shipIsResidentialFieldSpecified;
@@ -809,7 +824,7 @@ namespace Netsuite.Dto
         }
 
         /// <remarks/>
-        public System.DateTime shipDate {
+        public DateTime shipDate {
             get {
                 return this.shipDateField;
             }
@@ -819,7 +834,7 @@ namespace Netsuite.Dto
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        [XmlIgnore()]
         public bool shipDateSpecified {
             get {
                 return this.shipDateFieldSpecified;
@@ -880,7 +895,7 @@ namespace Netsuite.Dto
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        [XmlIgnore()]
         public bool totalSpecified {
             get {
                 return this.totalFieldSpecified;
@@ -961,7 +976,7 @@ namespace Netsuite.Dto
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        [XmlIgnore()]
         public bool orderStatusSpecified {
             get {
                 return this.orderStatusFieldSpecified;
@@ -1012,7 +1027,7 @@ namespace Netsuite.Dto
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlArrayItemAttribute("customField", Namespace="urn:core_2021_1.platform.webservices.netsuite.com", IsNullable=false)]
+        [XmlArrayItem("customField", Namespace="urn:core_2021_1.platform.webservices.netsuite.com", IsNullable=false)]
         public CustomFieldRef[] customFieldList {
             get {
                 return this.customFieldListField;
@@ -1023,7 +1038,7 @@ namespace Netsuite.Dto
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
+        [XmlAttribute()]
         public string internalId {
             get {
                 return this.internalIdField;
@@ -1034,7 +1049,7 @@ namespace Netsuite.Dto
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
+        [XmlAttribute()]
         public string externalId {
             get {
                 return this.externalIdField;
