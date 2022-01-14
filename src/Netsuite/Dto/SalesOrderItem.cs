@@ -101,17 +101,9 @@ namespace Netsuite.Dto
 
         private RecordRef _revRecScheduleField;
 
-        private DateTime _revRecStartDateField;
-
-        private bool _revRecStartDateFieldSpecified;
-
         private long _revRecTermInMonthsField;
 
         private bool _revRecTermInMonthsFieldSpecified;
-
-        private DateTime _revRecEndDateField;
-
-        private bool _revRecEndDateFieldSpecified;
 
         private bool _deferRevRecField;
 
@@ -249,10 +241,6 @@ namespace Netsuite.Dto
 
         private bool _vsoeDeliveredFieldSpecified;
 
-        private DateTime _expectedShipDateField;
-
-        private bool _expectedShipDateFieldSpecified;
-
         private bool _noAutoAssignLocationField;
 
         private bool _noAutoAssignLocationFieldSpecified;
@@ -266,8 +254,6 @@ namespace Netsuite.Dto
         private RecordRef _chargeTypeField;
 
         private RecordRef _orderAllocationStrategyField;
-
-        private DateTime _requestedDateField;
 
         private bool _requestedDateFieldSpecified;
 
@@ -606,20 +592,7 @@ namespace Netsuite.Dto
             set => _revRecScheduleField = value;
         }
 
-        /// <remarks/>
-        public DateTime RevRecStartDate
-        {
-            get => _revRecStartDateField;
-            set => _revRecStartDateField = value;
-        }
-
-        /// <remarks/>
-        [XmlIgnoreAttribute()]
-        public bool RevRecStartDateSpecified
-        {
-            get => _revRecStartDateFieldSpecified;
-            set => _revRecStartDateFieldSpecified = value;
-        }
+        public DateTime? RevRecStartDate { get; set; }
 
         /// <remarks/>
         public long RevRecTermInMonths
@@ -636,20 +609,7 @@ namespace Netsuite.Dto
             set => _revRecTermInMonthsFieldSpecified = value;
         }
 
-        /// <remarks/>
-        public DateTime RevRecEndDate
-        {
-            get => _revRecEndDateField;
-            set => _revRecEndDateField = value;
-        }
-
-        /// <remarks/>
-        [XmlIgnoreAttribute()]
-        public bool RevRecEndDateSpecified
-        {
-            get => _revRecEndDateFieldSpecified;
-            set => _revRecEndDateFieldSpecified = value;
-        }
+        public DateTime? RevRecEndDate { get; set; }
 
         /// <remarks/>
         public bool DeferRevRec
@@ -1156,19 +1116,7 @@ namespace Netsuite.Dto
         }
 
         /// <remarks/>
-        public DateTime ExpectedShipDate
-        {
-            get => _expectedShipDateField;
-            set => _expectedShipDateField = value;
-        }
-
-        /// <remarks/>
-        [XmlIgnoreAttribute()]
-        public bool ExpectedShipDateSpecified
-        {
-            get => _expectedShipDateFieldSpecified;
-            set => _expectedShipDateFieldSpecified = value;
-        }
+        public DateTime? ExpectedShipDate { get; set; }
 
         /// <remarks/>
         public bool NoAutoAssignLocation
@@ -1222,19 +1170,7 @@ namespace Netsuite.Dto
         }
 
         /// <remarks/>
-        public DateTime RequestedDate
-        {
-            get => _requestedDateField;
-            set => _requestedDateField = value;
-        }
-
-        /// <remarks/>
-        [XmlIgnoreAttribute()]
-        public bool RequestedDateSpecified
-        {
-            get => _requestedDateFieldSpecified;
-            set => _requestedDateFieldSpecified = value;
-        }
+        public DateTime? RequestedDate { get; set; }
 
         /// <remarks/>
         [XmlArrayItemAttribute("customField", Namespace = "urn:core_2021_1.platform.webservices.netsuite.com", IsNullable = false)]
