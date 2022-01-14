@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Netsuite.Dto
 {
-    public class SalesOrderQuery : Record
+    public class SalesOrderQuery : AddressQuery
     {
         public string Entity { get; set; }
         public string Currency { get; set; }
@@ -27,20 +27,6 @@ namespace Netsuite.Dto
         public string Status { get; set; }
         public string Memo { get; set; }
         public string Email { get; set; }
-        public string BillAddressAttention { get; set; }
-        public string BillAddressLine1 { get; set; }
-        public string BillAddressCity { get; set; }
-        public string BillAddressState { get; set; }
-        public string BillAddressZip { get; set; }
-        public string BillAddressCountry { get; set; }
-        public string BillAddressPhone { get; set; }
-        public string ShipAddressAttention { get; set; }
-        public string ShipAddressLine1 { get; set; }
-        public string ShipAddressCity { get; set; }
-        public string ShipAddressState { get; set; }
-        public string ShipAddressZip { get; set; }
-        public string ShipAddressCountry { get; set; }
-        public string ShipAddressPhone { get; set; }
         public string OtherRefNum { get; set; }
         public string CustBody_DN_SO_CustomField1 { get; set; }
         public string CustBody_DN_SO_CustomField2 { get; set; }

@@ -15,173 +15,169 @@ namespace Netsuite.Dto
     [XmlType(Namespace="urn:purchases_2021_1.transactions.webservices.netsuite.com")]
     public partial class PurchaseOrder : Record {
 
-        private DateTime createdDateField;
+        private DateTime _createdDateField;
 
-        private bool createdDateFieldSpecified;
+        private bool _createdDateFieldSpecified;
 
-        private DateTime lastModifiedDateField;
+        private DateTime _lastModifiedDateField;
 
-        private bool lastModifiedDateFieldSpecified;
+        private bool _lastModifiedDateFieldSpecified;
 
-        private RecordRef nexusField;
+        private RecordRef _nexusField;
 
-        private RecordRef subsidiaryTaxRegNumField;
+        private RecordRef _subsidiaryTaxRegNumField;
 
-        private bool taxRegOverrideField;
+        private bool _taxRegOverrideField;
 
-        private bool taxRegOverrideFieldSpecified;
+        private bool _taxRegOverrideFieldSpecified;
 
-        private bool taxDetailsOverrideField;
+        private bool _taxDetailsOverrideField;
 
-        private bool taxDetailsOverrideFieldSpecified;
+        private bool _taxDetailsOverrideFieldSpecified;
 
-        private RecordRef customFormField;
+        private RecordRef _customFormField;
 
-        private RecordRef entityField;
+        private RecordRef _entityField;
 
-        private RecordRef purchaseContractField;
+        private RecordRef _purchaseContractField;
 
-        private string vatRegNumField;
+        private string _vatRegNumField;
 
-        private RecordRef employeeField;
+        private RecordRef _employeeField;
 
-        private bool supervisorApprovalField;
+        private bool _supervisorApprovalField;
 
-        private bool supervisorApprovalFieldSpecified;
+        private bool _supervisorApprovalFieldSpecified;
 
-        private DateTime tranDateField;
+        private DateTime _tranDateField;
 
-        private bool tranDateFieldSpecified;
+        private bool _tranDateFieldSpecified;
 
-        private string tranIdField;
+        private string _tranIdField;
 
-        private RecordRef entityTaxRegNumField;
+        private RecordRef _entityTaxRegNumField;
 
-        private DateTime taxPointDateField;
+        private DateTime _taxPointDateField;
 
-        private bool taxPointDateFieldSpecified;
+        private bool _taxPointDateFieldSpecified;
 
-        private RecordRef createdFromField;
+        private RecordRef _createdFromField;
 
-        private RecordRef termsField;
+        private RecordRef _termsField;
 
-        private DateTime dueDateField;
+        private DateTime _dueDateField;
 
-        private bool dueDateFieldSpecified;
+        private bool _dueDateFieldSpecified;
 
-        private string otherRefNumField;
+        private string _otherRefNumField;
 
-        private double availableVendorCreditField;
+        private decimal _availableVendorCreditField;
 
-        private bool availableVendorCreditFieldSpecified;
+        private bool _availableVendorCreditFieldSpecified;
 
-        private string memoField;
+        private string _memoField;
 
-        private RecordRef approvalStatusField;
+        private RecordRef _approvalStatusField;
 
-        private double exchangeRateField;
+        private decimal _exchangeRateField;
 
-        private bool exchangeRateFieldSpecified;
+        private bool _exchangeRateFieldSpecified;
 
-        private RecordRef nextApproverField;
+        private RecordRef _nextApproverField;
 
-        private string sourceField;
+        private string _sourceField;
 
-        private string currencyNameField;
+        private string _currencyNameField;
 
-        private bool toBePrintedField;
+        private bool _toBePrintedField;
 
-        private bool toBePrintedFieldSpecified;
+        private bool _toBePrintedFieldSpecified;
 
-        private bool toBeEmailedField;
+        private bool _toBeEmailedField;
 
-        private bool toBeEmailedFieldSpecified;
+        private bool _toBeEmailedFieldSpecified;
 
-        private string emailField;
+        private string _emailField;
 
-        private bool toBeFaxedField;
+        private bool _toBeFaxedField;
 
-        private bool toBeFaxedFieldSpecified;
+        private bool _toBeFaxedFieldSpecified;
 
-        private string faxField;
+        private string _faxField;
 
-        private string messageField;
+        private string _messageField;
 
-        private RecordRef billingAddressField;
+        private RecordRef _billingAddressField;
 
-        private RecordRef billAddressListField;
+        private RecordRef _billAddressListField;
 
-        private RecordRef currencyField;
+        private RecordRef _currencyField;
 
-        private RecordRef shipToField;
+        private RecordRef _shipToField;
 
-        private double subTotalField;
+        private decimal _subTotalField;
 
-        private bool subTotalFieldSpecified;
+        private bool _subTotalFieldSpecified;
 
-        private double taxTotalField;
+        private decimal _taxTotalField;
 
-        private bool taxTotalFieldSpecified;
+        private bool _taxTotalFieldSpecified;
 
-        private double tax2TotalField;
+        private decimal _tax2TotalField;
 
-        private bool tax2TotalFieldSpecified;
+        private bool _tax2TotalFieldSpecified;
 
-        private RecordRef shippingAddressField;
+        private RecordRef _shippingAddressField;
 
-        private bool shipIsResidentialField;
+        private bool _shipIsResidentialField;
 
-        private bool shipIsResidentialFieldSpecified;
+        private bool _shipIsResidentialFieldSpecified;
 
-        private RecordRef shipAddressListField;
+        private RecordRef _shipAddressListField;
 
-        private string fobField;
+        private string _fobField;
 
-        private DateTime shipDateField;
+        private DateTime _shipDateField;
 
-        private bool shipDateFieldSpecified;
+        private bool _shipDateFieldSpecified;
 
-        private RecordRef shipMethodField;
+        private RecordRef _shipMethodField;
 
-        private RecordRef incotermField;
+        private RecordRef _incotermField;
 
-        private string trackingNumbersField;
+        private string _trackingNumbersField;
 
-        private string linkedTrackingNumbersField;
+        private string _linkedTrackingNumbersField;
 
-        private double totalField;
+        private RecordRef _classField;
 
-        private bool totalFieldSpecified;
+        private RecordRef _departmentField;
 
-        private RecordRef classField;
+        private RecordRef _locationField;
 
-        private RecordRef departmentField;
+        private RecordRef _subsidiaryField;
 
-        private RecordRef locationField;
+        private RecordRef _intercoTransactionField;
 
-        private RecordRef subsidiaryField;
+        private string _statusField;
 
-        private RecordRef intercoTransactionField;
+        private PurchaseOrderOrderStatus _orderStatusField;
 
-        private string statusField;
+        private bool _orderStatusFieldSpecified;
 
-        private PurchaseOrderOrderStatus orderStatusField;
+        private PurchaseOrderItem[] _itemListField;
 
-        private bool orderStatusFieldSpecified;
+        private AccountingBookDetailList _accountingBookDetailListField;
 
-        private PurchaseOrderItem[] itemListField;
+        private PurchaseOrderExpenseList _expenseListField;
 
-        private AccountingBookDetailList accountingBookDetailListField;
+        private TaxDetailsList _taxDetailsListField;
 
-        private PurchaseOrderExpenseList expenseListField;
+        private CustomFieldRef[] _customFieldListField;
 
-        private TaxDetailsList taxDetailsListField;
+        private string _internalIdField;
 
-        private CustomFieldRef[] customFieldListField;
-
-        private string internalIdField;
-
-        private string externalIdField;
+        private string _externalIdField;
         
         public string CustBody_DN_PO_CustomField1 { get; set; }
         public string CustBody_DN_PO_CustomField2 { get; set; }
@@ -193,870 +189,522 @@ namespace Netsuite.Dto
         public string CustBody_DN_PO_CustomField8 { get; set; }
         public string CustBody_DN_PO_CustomField9 { get; set; }
         public string CustBody_DN_PO_CustomField10 { get; set; }
+
         
         public bool Void { get; set; }
         
         /// <remarks/>
-        public DateTime createdDate {
-            get {
-                return this.createdDateField;
-            }
-            set {
-                this.createdDateField = value;
-            }
+        public DateTime CreatedDate {
+            get => _createdDateField;
+            set => _createdDateField = value;
         }
 
         /// <remarks/>
         [XmlIgnore()]
-        public bool createdDateSpecified {
-            get {
-                return this.createdDateFieldSpecified;
-            }
-            set {
-                this.createdDateFieldSpecified = value;
-            }
+        public bool CreatedDateSpecified {
+            get => _createdDateFieldSpecified;
+            set => _createdDateFieldSpecified = value;
         }
 
         /// <remarks/>
-        public DateTime lastModifiedDate {
-            get {
-                return this.lastModifiedDateField;
-            }
-            set {
-                this.lastModifiedDateField = value;
-            }
+        public DateTime LastModifiedDate {
+            get => _lastModifiedDateField;
+            set => _lastModifiedDateField = value;
         }
 
         /// <remarks/>
         [XmlIgnore()]
-        public bool lastModifiedDateSpecified {
-            get {
-                return this.lastModifiedDateFieldSpecified;
-            }
-            set {
-                this.lastModifiedDateFieldSpecified = value;
-            }
+        public bool LastModifiedDateSpecified {
+            get => _lastModifiedDateFieldSpecified;
+            set => _lastModifiedDateFieldSpecified = value;
         }
 
         /// <remarks/>
-        public RecordRef nexus {
-            get {
-                return this.nexusField;
-            }
-            set {
-                this.nexusField = value;
-            }
+        public RecordRef Nexus {
+            get => _nexusField;
+            set => _nexusField = value;
         }
 
         /// <remarks/>
-        public RecordRef subsidiaryTaxRegNum {
-            get {
-                return this.subsidiaryTaxRegNumField;
-            }
-            set {
-                this.subsidiaryTaxRegNumField = value;
-            }
+        public RecordRef SubsidiaryTaxRegNum {
+            get => _subsidiaryTaxRegNumField;
+            set => _subsidiaryTaxRegNumField = value;
         }
 
         /// <remarks/>
-        public bool taxRegOverride {
-            get {
-                return this.taxRegOverrideField;
-            }
-            set {
-                this.taxRegOverrideField = value;
-            }
+        public bool TaxRegOverride {
+            get => _taxRegOverrideField;
+            set => _taxRegOverrideField = value;
         }
 
         /// <remarks/>
         [XmlIgnore()]
-        public bool taxRegOverrideSpecified {
-            get {
-                return this.taxRegOverrideFieldSpecified;
-            }
-            set {
-                this.taxRegOverrideFieldSpecified = value;
-            }
+        public bool TaxRegOverrideSpecified {
+            get => _taxRegOverrideFieldSpecified;
+            set => _taxRegOverrideFieldSpecified = value;
         }
 
         /// <remarks/>
-        public bool taxDetailsOverride {
-            get {
-                return this.taxDetailsOverrideField;
-            }
-            set {
-                this.taxDetailsOverrideField = value;
-            }
+        public bool TaxDetailsOverride {
+            get => _taxDetailsOverrideField;
+            set => _taxDetailsOverrideField = value;
         }
 
         /// <remarks/>
         [XmlIgnore()]
-        public bool taxDetailsOverrideSpecified {
-            get {
-                return this.taxDetailsOverrideFieldSpecified;
-            }
-            set {
-                this.taxDetailsOverrideFieldSpecified = value;
-            }
+        public bool TaxDetailsOverrideSpecified {
+            get => _taxDetailsOverrideFieldSpecified;
+            set => _taxDetailsOverrideFieldSpecified = value;
         }
 
         /// <remarks/>
-        public RecordRef customForm {
-            get {
-                return this.customFormField;
-            }
-            set {
-                this.customFormField = value;
-            }
+        public RecordRef CustomForm {
+            get => _customFormField;
+            set => _customFormField = value;
         }
 
         /// <remarks/>
-        public RecordRef entity {
-            get {
-                return this.entityField;
-            }
-            set {
-                this.entityField = value;
-            }
+        public RecordRef Entity {
+            get => _entityField;
+            set => _entityField = value;
         }
 
         /// <remarks/>
-        public RecordRef purchaseContract {
-            get {
-                return this.purchaseContractField;
-            }
-            set {
-                this.purchaseContractField = value;
-            }
+        public RecordRef PurchaseContract {
+            get => _purchaseContractField;
+            set => _purchaseContractField = value;
         }
 
         /// <remarks/>
-        public string vatRegNum {
-            get {
-                return this.vatRegNumField;
-            }
-            set {
-                this.vatRegNumField = value;
-            }
+        public string VatRegNum {
+            get => _vatRegNumField;
+            set => _vatRegNumField = value;
         }
 
         /// <remarks/>
-        public RecordRef employee {
-            get {
-                return this.employeeField;
-            }
-            set {
-                this.employeeField = value;
-            }
+        public RecordRef Employee {
+            get => _employeeField;
+            set => _employeeField = value;
         }
 
         /// <remarks/>
-        public bool supervisorApproval {
-            get {
-                return this.supervisorApprovalField;
-            }
-            set {
-                this.supervisorApprovalField = value;
-            }
+        public bool SupervisorApproval {
+            get => _supervisorApprovalField;
+            set => _supervisorApprovalField = value;
         }
 
         /// <remarks/>
         [XmlIgnore()]
-        public bool supervisorApprovalSpecified {
-            get {
-                return this.supervisorApprovalFieldSpecified;
-            }
-            set {
-                this.supervisorApprovalFieldSpecified = value;
-            }
+        public bool SupervisorApprovalSpecified {
+            get => _supervisorApprovalFieldSpecified;
+            set => _supervisorApprovalFieldSpecified = value;
         }
 
         /// <remarks/>
-        public DateTime tranDate {
-            get {
-                return this.tranDateField;
-            }
-            set {
-                this.tranDateField = value;
-            }
+        public DateTime TranDate {
+            get => _tranDateField;
+            set => _tranDateField = value;
         }
 
         /// <remarks/>
         [XmlIgnore()]
-        public bool tranDateSpecified {
-            get {
-                return this.tranDateFieldSpecified;
-            }
-            set {
-                this.tranDateFieldSpecified = value;
-            }
+        public bool TranDateSpecified {
+            get => _tranDateFieldSpecified;
+            set => _tranDateFieldSpecified = value;
         }
 
         /// <remarks/>
-        public string tranId {
-            get {
-                return this.tranIdField;
-            }
-            set {
-                this.tranIdField = value;
-            }
+        public string TranId {
+            get => _tranIdField;
+            set => _tranIdField = value;
         }
 
         /// <remarks/>
-        public RecordRef entityTaxRegNum {
-            get {
-                return this.entityTaxRegNumField;
-            }
-            set {
-                this.entityTaxRegNumField = value;
-            }
+        public RecordRef EntityTaxRegNum {
+            get => _entityTaxRegNumField;
+            set => _entityTaxRegNumField = value;
         }
 
         /// <remarks/>
-        public DateTime taxPointDate {
-            get {
-                return this.taxPointDateField;
-            }
-            set {
-                this.taxPointDateField = value;
-            }
+        public DateTime TaxPointDate {
+            get => _taxPointDateField;
+            set => _taxPointDateField = value;
         }
 
         /// <remarks/>
         [XmlIgnore()]
-        public bool taxPointDateSpecified {
-            get {
-                return this.taxPointDateFieldSpecified;
-            }
-            set {
-                this.taxPointDateFieldSpecified = value;
-            }
+        public bool TaxPointDateSpecified {
+            get => _taxPointDateFieldSpecified;
+            set => _taxPointDateFieldSpecified = value;
         }
 
         /// <remarks/>
-        public RecordRef createdFrom {
-            get {
-                return this.createdFromField;
-            }
-            set {
-                this.createdFromField = value;
-            }
+        public RecordRef CreatedFrom {
+            get => _createdFromField;
+            set => _createdFromField = value;
         }
 
         /// <remarks/>
-        public RecordRef terms {
-            get {
-                return this.termsField;
-            }
-            set {
-                this.termsField = value;
-            }
+        public RecordRef Terms {
+            get => _termsField;
+            set => _termsField = value;
         }
 
         /// <remarks/>
-        public DateTime dueDate {
-            get {
-                return this.dueDateField;
-            }
-            set {
-                this.dueDateField = value;
-            }
+        public DateTime DueDate {
+            get => _dueDateField;
+            set => _dueDateField = value;
         }
 
         /// <remarks/>
         [XmlIgnore()]
-        public bool dueDateSpecified {
-            get {
-                return this.dueDateFieldSpecified;
-            }
-            set {
-                this.dueDateFieldSpecified = value;
-            }
+        public bool DueDateSpecified {
+            get => _dueDateFieldSpecified;
+            set => _dueDateFieldSpecified = value;
         }
 
         /// <remarks/>
-        public string otherRefNum {
-            get {
-                return this.otherRefNumField;
-            }
-            set {
-                this.otherRefNumField = value;
-            }
+        public string OtherRefNum {
+            get => _otherRefNumField;
+            set => _otherRefNumField = value;
         }
 
         /// <remarks/>
-        public double availableVendorCredit {
-            get {
-                return this.availableVendorCreditField;
-            }
-            set {
-                this.availableVendorCreditField = value;
-            }
+        public decimal AvailableVendorCredit {
+            get => _availableVendorCreditField;
+            set => _availableVendorCreditField = value;
         }
 
         /// <remarks/>
         [XmlIgnore()]
-        public bool availableVendorCreditSpecified {
-            get {
-                return this.availableVendorCreditFieldSpecified;
-            }
-            set {
-                this.availableVendorCreditFieldSpecified = value;
-            }
+        public bool AvailableVendorCreditSpecified {
+            get => _availableVendorCreditFieldSpecified;
+            set => _availableVendorCreditFieldSpecified = value;
         }
 
         /// <remarks/>
-        public string memo {
-            get {
-                return this.memoField;
-            }
-            set {
-                this.memoField = value;
-            }
+        public string Memo {
+            get => _memoField;
+            set => _memoField = value;
         }
 
         /// <remarks/>
-        public RecordRef approvalStatus {
-            get {
-                return this.approvalStatusField;
-            }
-            set {
-                this.approvalStatusField = value;
-            }
+        public RecordRef ApprovalStatus {
+            get => _approvalStatusField;
+            set => _approvalStatusField = value;
         }
 
         /// <remarks/>
-        public double exchangeRate {
-            get {
-                return this.exchangeRateField;
-            }
-            set {
-                this.exchangeRateField = value;
-            }
+        public decimal ExchangeRate {
+            get => _exchangeRateField;
+            set => _exchangeRateField = value;
         }
 
         /// <remarks/>
         [XmlIgnore()]
-        public bool exchangeRateSpecified {
-            get {
-                return this.exchangeRateFieldSpecified;
-            }
-            set {
-                this.exchangeRateFieldSpecified = value;
-            }
+        public bool ExchangeRateSpecified {
+            get => _exchangeRateFieldSpecified;
+            set => _exchangeRateFieldSpecified = value;
         }
 
         /// <remarks/>
-        public RecordRef nextApprover {
-            get {
-                return this.nextApproverField;
-            }
-            set {
-                this.nextApproverField = value;
-            }
+        public RecordRef NextApprover {
+            get => _nextApproverField;
+            set => _nextApproverField = value;
         }
 
         /// <remarks/>
-        public string source {
-            get {
-                return this.sourceField;
-            }
-            set {
-                this.sourceField = value;
-            }
+        public string Source {
+            get => _sourceField;
+            set => _sourceField = value;
         }
 
         /// <remarks/>
-        public string currencyName {
-            get {
-                return this.currencyNameField;
-            }
-            set {
-                this.currencyNameField = value;
-            }
+        public string CurrencyName {
+            get => _currencyNameField;
+            set => _currencyNameField = value;
         }
 
         /// <remarks/>
-        public bool toBePrinted {
-            get {
-                return this.toBePrintedField;
-            }
-            set {
-                this.toBePrintedField = value;
-            }
+        public bool ToBePrinted {
+            get => _toBePrintedField;
+            set => _toBePrintedField = value;
         }
 
         /// <remarks/>
         [XmlIgnore()]
-        public bool toBePrintedSpecified {
-            get {
-                return this.toBePrintedFieldSpecified;
-            }
-            set {
-                this.toBePrintedFieldSpecified = value;
-            }
+        public bool ToBePrintedSpecified {
+            get => _toBePrintedFieldSpecified;
+            set => _toBePrintedFieldSpecified = value;
         }
 
         /// <remarks/>
-        public bool toBeEmailed {
-            get {
-                return this.toBeEmailedField;
-            }
-            set {
-                this.toBeEmailedField = value;
-            }
+        public bool ToBeEmailed {
+            get => _toBeEmailedField;
+            set => _toBeEmailedField = value;
         }
 
         /// <remarks/>
         [XmlIgnore()]
-        public bool toBeEmailedSpecified {
-            get {
-                return this.toBeEmailedFieldSpecified;
-            }
-            set {
-                this.toBeEmailedFieldSpecified = value;
-            }
+        public bool ToBeEmailedSpecified {
+            get => _toBeEmailedFieldSpecified;
+            set => _toBeEmailedFieldSpecified = value;
         }
 
         /// <remarks/>
-        public string email {
-            get {
-                return this.emailField;
-            }
-            set {
-                this.emailField = value;
-            }
+        public string Email {
+            get => _emailField;
+            set => _emailField = value;
         }
 
         /// <remarks/>
-        public bool toBeFaxed {
-            get {
-                return this.toBeFaxedField;
-            }
-            set {
-                this.toBeFaxedField = value;
-            }
+        public bool ToBeFaxed {
+            get => _toBeFaxedField;
+            set => _toBeFaxedField = value;
         }
 
         /// <remarks/>
         [XmlIgnore()]
-        public bool toBeFaxedSpecified {
-            get {
-                return this.toBeFaxedFieldSpecified;
-            }
-            set {
-                this.toBeFaxedFieldSpecified = value;
-            }
+        public bool ToBeFaxedSpecified {
+            get => _toBeFaxedFieldSpecified;
+            set => _toBeFaxedFieldSpecified = value;
         }
 
         /// <remarks/>
-        public string fax {
-            get {
-                return this.faxField;
-            }
-            set {
-                this.faxField = value;
-            }
+        public string Fax {
+            get => _faxField;
+            set => _faxField = value;
         }
 
         /// <remarks/>
-        public string message {
-            get {
-                return this.messageField;
-            }
-            set {
-                this.messageField = value;
-            }
+        public string Message {
+            get => _messageField;
+            set => _messageField = value;
         }
 
         /// <remarks/>
-        public RecordRef billingAddress {
-            get {
-                return this.billingAddressField;
-            }
-            set {
-                this.billingAddressField = value;
-            }
+        public RecordRef BillingAddress {
+            get => _billingAddressField;
+            set => _billingAddressField = value;
         }
 
         /// <remarks/>
-        public RecordRef billAddressList {
-            get {
-                return this.billAddressListField;
-            }
-            set {
-                this.billAddressListField = value;
-            }
+        public RecordRef BillAddressList {
+            get => _billAddressListField;
+            set => _billAddressListField = value;
         }
 
         /// <remarks/>
-        public RecordRef currency {
-            get {
-                return this.currencyField;
-            }
-            set {
-                this.currencyField = value;
-            }
+        public RecordRef Currency {
+            get => _currencyField;
+            set => _currencyField = value;
         }
 
         /// <remarks/>
-        public RecordRef shipTo {
-            get {
-                return this.shipToField;
-            }
-            set {
-                this.shipToField = value;
-            }
+        public RecordRef ShipTo {
+            get => _shipToField;
+            set => _shipToField = value;
         }
 
         /// <remarks/>
-        public double subTotal {
-            get {
-                return this.subTotalField;
-            }
-            set {
-                this.subTotalField = value;
-            }
+        public decimal SubTotal {
+            get => _subTotalField;
+            set => _subTotalField = value;
         }
 
         /// <remarks/>
         [XmlIgnore()]
-        public bool subTotalSpecified {
-            get {
-                return this.subTotalFieldSpecified;
-            }
-            set {
-                this.subTotalFieldSpecified = value;
-            }
+        public bool SubTotalSpecified {
+            get => _subTotalFieldSpecified;
+            set => _subTotalFieldSpecified = value;
         }
 
         /// <remarks/>
-        public double taxTotal {
-            get {
-                return this.taxTotalField;
-            }
-            set {
-                this.taxTotalField = value;
-            }
+        public decimal TaxTotal {
+            get => _taxTotalField;
+            set => _taxTotalField = value;
         }
 
         /// <remarks/>
         [XmlIgnore()]
-        public bool taxTotalSpecified {
-            get {
-                return this.taxTotalFieldSpecified;
-            }
-            set {
-                this.taxTotalFieldSpecified = value;
-            }
+        public bool TaxTotalSpecified {
+            get => _taxTotalFieldSpecified;
+            set => _taxTotalFieldSpecified = value;
         }
 
         /// <remarks/>
-        public double tax2Total {
-            get {
-                return this.tax2TotalField;
-            }
-            set {
-                this.tax2TotalField = value;
-            }
+        public decimal Tax2Total {
+            get => _tax2TotalField;
+            set => _tax2TotalField = value;
         }
 
         /// <remarks/>
         [XmlIgnore()]
-        public bool tax2TotalSpecified {
-            get {
-                return this.tax2TotalFieldSpecified;
-            }
-            set {
-                this.tax2TotalFieldSpecified = value;
-            }
+        public bool Tax2TotalSpecified {
+            get => _tax2TotalFieldSpecified;
+            set => _tax2TotalFieldSpecified = value;
         }
 
         /// <remarks/>
-        public RecordRef shippingAddress {
-            get {
-                return this.shippingAddressField;
-            }
-            set {
-                this.shippingAddressField = value;
-            }
+        public RecordRef ShippingAddress {
+            get => _shippingAddressField;
+            set => _shippingAddressField = value;
         }
 
         /// <remarks/>
-        public bool shipIsResidential {
-            get {
-                return this.shipIsResidentialField;
-            }
-            set {
-                this.shipIsResidentialField = value;
-            }
+        public bool ShipIsResidential {
+            get => _shipIsResidentialField;
+            set => _shipIsResidentialField = value;
         }
 
         /// <remarks/>
         [XmlIgnore()]
-        public bool shipIsResidentialSpecified {
-            get {
-                return this.shipIsResidentialFieldSpecified;
-            }
-            set {
-                this.shipIsResidentialFieldSpecified = value;
-            }
+        public bool ShipIsResidentialSpecified {
+            get => _shipIsResidentialFieldSpecified;
+            set => _shipIsResidentialFieldSpecified = value;
         }
 
         /// <remarks/>
-        public RecordRef shipAddressList {
-            get {
-                return this.shipAddressListField;
-            }
-            set {
-                this.shipAddressListField = value;
-            }
+        public RecordRef ShipAddressList {
+            get => _shipAddressListField;
+            set => _shipAddressListField = value;
         }
 
         /// <remarks/>
-        public string fob {
-            get {
-                return this.fobField;
-            }
-            set {
-                this.fobField = value;
-            }
+        public string Fob {
+            get => _fobField;
+            set => _fobField = value;
         }
 
         /// <remarks/>
-        public DateTime shipDate {
-            get {
-                return this.shipDateField;
-            }
-            set {
-                this.shipDateField = value;
-            }
+        public DateTime ShipDate {
+            get => _shipDateField;
+            set => _shipDateField = value;
         }
 
         /// <remarks/>
         [XmlIgnore()]
-        public bool shipDateSpecified {
-            get {
-                return this.shipDateFieldSpecified;
-            }
-            set {
-                this.shipDateFieldSpecified = value;
-            }
+        public bool ShipDateSpecified {
+            get => _shipDateFieldSpecified;
+            set => _shipDateFieldSpecified = value;
         }
 
         /// <remarks/>
-        public RecordRef shipMethod {
-            get {
-                return this.shipMethodField;
-            }
-            set {
-                this.shipMethodField = value;
-            }
+        public RecordRef ShipMethod {
+            get => _shipMethodField;
+            set => _shipMethodField = value;
         }
 
         /// <remarks/>
-        public RecordRef incoterm {
-            get {
-                return this.incotermField;
-            }
-            set {
-                this.incotermField = value;
-            }
+        public RecordRef Incoterm {
+            get => _incotermField;
+            set => _incotermField = value;
         }
 
         /// <remarks/>
-        public string trackingNumbers {
-            get {
-                return this.trackingNumbersField;
-            }
-            set {
-                this.trackingNumbersField = value;
-            }
+        public string TrackingNumbers {
+            get => _trackingNumbersField;
+            set => _trackingNumbersField = value;
         }
 
         /// <remarks/>
-        public string linkedTrackingNumbers {
-            get {
-                return this.linkedTrackingNumbersField;
-            }
-            set {
-                this.linkedTrackingNumbersField = value;
-            }
+        public string LinkedTrackingNumbers {
+            get => _linkedTrackingNumbersField;
+            set => _linkedTrackingNumbersField = value;
         }
 
         /// <remarks/>
-        public double total {
-            get {
-                return this.totalField;
-            }
-            set {
-                this.totalField = value;
-            }
+        public RecordRef Class {
+            get => _classField;
+            set => _classField = value;
         }
 
         /// <remarks/>
-        [XmlIgnore()]
-        public bool totalSpecified {
-            get {
-                return this.totalFieldSpecified;
-            }
-            set {
-                this.totalFieldSpecified = value;
-            }
+        public RecordRef Department {
+            get => _departmentField;
+            set => _departmentField = value;
         }
 
         /// <remarks/>
-        public RecordRef @class {
-            get {
-                return this.classField;
-            }
-            set {
-                this.classField = value;
-            }
+        public RecordRef Location {
+            get => _locationField;
+            set => _locationField = value;
         }
 
         /// <remarks/>
-        public RecordRef department {
-            get {
-                return this.departmentField;
-            }
-            set {
-                this.departmentField = value;
-            }
+        public RecordRef Subsidiary {
+            get => _subsidiaryField;
+            set => _subsidiaryField = value;
         }
 
         /// <remarks/>
-        public RecordRef location {
-            get {
-                return this.locationField;
-            }
-            set {
-                this.locationField = value;
-            }
+        public RecordRef IntercoTransaction {
+            get => _intercoTransactionField;
+            set => _intercoTransactionField = value;
         }
 
         /// <remarks/>
-        public RecordRef subsidiary {
-            get {
-                return this.subsidiaryField;
-            }
-            set {
-                this.subsidiaryField = value;
-            }
+        public string Status {
+            get => _statusField;
+            set => _statusField = value;
         }
 
         /// <remarks/>
-        public RecordRef intercoTransaction {
-            get {
-                return this.intercoTransactionField;
-            }
-            set {
-                this.intercoTransactionField = value;
-            }
-        }
-
-        /// <remarks/>
-        public string status {
-            get {
-                return this.statusField;
-            }
-            set {
-                this.statusField = value;
-            }
-        }
-
-        /// <remarks/>
-        public PurchaseOrderOrderStatus orderStatus {
-            get {
-                return this.orderStatusField;
-            }
-            set {
-                this.orderStatusField = value;
-            }
+        public PurchaseOrderOrderStatus OrderStatus {
+            get => _orderStatusField;
+            set => _orderStatusField = value;
         }
 
         /// <remarks/>
         [XmlIgnore()]
-        public bool orderStatusSpecified {
-            get {
-                return this.orderStatusFieldSpecified;
-            }
-            set {
-                this.orderStatusFieldSpecified = value;
-            }
+        public bool OrderStatusSpecified {
+            get => _orderStatusFieldSpecified;
+            set => _orderStatusFieldSpecified = value;
         }
 
         /// <remarks/>
-        public PurchaseOrderItem[] item {
-            get {
-                return this.itemListField;
-            }
-            set {
-                this.itemListField = value;
-            }
+        public PurchaseOrderItem[] Item {
+            get => _itemListField;
+            set => _itemListField = value;
         }
 
         /// <remarks/>
-        public AccountingBookDetailList accountingBookDetailList {
-            get {
-                return this.accountingBookDetailListField;
-            }
-            set {
-                this.accountingBookDetailListField = value;
-            }
+        public AccountingBookDetailList AccountingBookDetailList {
+            get => _accountingBookDetailListField;
+            set => _accountingBookDetailListField = value;
         }
 
         /// <remarks/>
-        public PurchaseOrderExpenseList expenseList {
-            get {
-                return this.expenseListField;
-            }
-            set {
-                this.expenseListField = value;
-            }
+        public PurchaseOrderExpenseList ExpenseList {
+            get => _expenseListField;
+            set => _expenseListField = value;
         }
 
         /// <remarks/>
-        public TaxDetailsList taxDetailsList {
-            get {
-                return this.taxDetailsListField;
-            }
-            set {
-                this.taxDetailsListField = value;
-            }
+        public TaxDetailsList TaxDetailsList {
+            get => _taxDetailsListField;
+            set => _taxDetailsListField = value;
         }
 
         /// <remarks/>
         [XmlArrayItem("customField", Namespace="urn:core_2021_1.platform.webservices.netsuite.com", IsNullable=false)]
-        public CustomFieldRef[] customFieldList {
-            get {
-                return this.customFieldListField;
-            }
-            set {
-                this.customFieldListField = value;
-            }
+        public CustomFieldRef[] CustomFieldList {
+            get => _customFieldListField;
+            set => _customFieldListField = value;
         }
 
         /// <remarks/>
         [XmlAttribute()]
-        public string internalId {
-            get {
-                return this.internalIdField;
-            }
-            set {
-                this.internalIdField = value;
-            }
+        public string InternalId {
+            get => _internalIdField;
+            set => _internalIdField = value;
         }
 
         /// <remarks/>
         [XmlAttribute()]
-        public string externalId {
-            get {
-                return this.externalIdField;
-            }
-            set {
-                this.externalIdField = value;
-            }
+        public string ExternalId {
+            get => _externalIdField;
+            set => _externalIdField = value;
         }
     }
 }
