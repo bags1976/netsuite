@@ -71,8 +71,6 @@ namespace Netsuite.Dto
 
         private RecordRef _purchaseContractField;
 
-        private string _rateField;
-
         private decimal _amountField;
 
         private bool _amountFieldSpecified;
@@ -114,7 +112,6 @@ namespace Netsuite.Dto
         private RecordRef _createdFromField;
 
         public string Subsidiary { get; set; }
-        public string NetAmount { get; set; }
         public bool Fulfillable { get; set; }
         public string Id { get; set; }
 
@@ -310,10 +307,7 @@ namespace Netsuite.Dto
         }
 
         /// <remarks/>
-        public string Rate {
-            get => _rateField;
-            set => _rateField = value;
-        }
+        public decimal Rate { get; set; }
 
         /// <remarks/>
         public decimal Amount {

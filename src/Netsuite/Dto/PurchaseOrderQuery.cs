@@ -24,6 +24,6 @@ namespace Netsuite.Dto
         public string CustBody_DN_PO_CustomField8 { get; set; }
         public string CustBody_DN_PO_CustomField9 { get; set; }
         public string CustBody_DN_PO_CustomField10 { get; set; }
-        public List<PurchaseOrderItem> Item { get; set; }
+        public List<PurchaseOrderLineQuery> Item { get; set; }
     }
 }
