@@ -255,8 +255,6 @@ namespace Netsuite.Dto
 
         private RecordRef _orderAllocationStrategyField;
 
-        private bool _requestedDateFieldSpecified;
-
         private CustomFieldRef[] _customFieldListField;
 
         #endregion
