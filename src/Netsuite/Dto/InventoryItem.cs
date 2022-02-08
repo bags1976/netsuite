@@ -4,31 +4,19 @@ using Netsuite.Enum;
 
 public class InventoryItem
 {
-    public bool? CreatedDateSpecified { get; set; }
+    public DateTime? CreatedDate { get; set; }
 
     public DateTime LastModifiedDate { get; set; }
 
-    public bool? LastModifiedDateSpecified { get; set; }
-
     public string PurchaseDescription { get; set; }
-
-    public bool? CopyDescription { get; set; }
-
-    public bool? CopyDescriptionSpecified { get; set; }
 
     public RecordRef ExpenseAccount { get; set; }
 
     public DateTime DateConvertedToInv { get; set; }
 
-    public bool? DateConvertedToInvSpecified { get; set; }
-
     public ItemType OriginalItemType { get; set; }
 
-    public bool? OriginalItemTypeSpecified { get; set; }
-
     public ItemSubType OriginalItemSubtype { get; set; }
-
-    public bool? OriginalItemSubtypeSpecified { get; set; }
 
     public RecordRef CogsAccount { get; set; }
 
@@ -58,8 +46,6 @@ public class InventoryItem
 
     public bool? ContingentRevenueHandling { get; set; }
 
-    public bool? ContingentRevenueHandlingSpecified { get; set; }
-
     public RecordRef RevReclassFxAccount { get; set; }
 
     public bool? IsTaxable { get; set; }
@@ -67,8 +53,6 @@ public class InventoryItem
     public RecordRef AssetAccount { get; set; }
 
     public bool? MatchBillToReceipt { get; set; }
-
-    public bool? MatchBillToReceiptSpecified { get; set; }
 
     public RecordRef BillQtyVarianceAcct { get; set; }
 
@@ -174,8 +158,6 @@ public class InventoryItem
 
     public long MaximumQuantity { get; set; }
 
-    public bool? MaximumQuantitySpecified { get; set; }
-
     public string MinimumQuantityUnits { get; set; }
 
     public RecordRef SoftDescriptor { get; set; }
@@ -216,11 +198,7 @@ public class InventoryItem
 
     public bool? IsStorePickupAllowed { get; set; }
 
-    public bool? IsStorePickupAllowedSpecified { get; set; }
-
     public long ReorderMultiple { get; set; }
-
-    public bool? ReorderMultipleSpecified { get; set; }
 
     public decimal? Cost { get; set; }
 
@@ -235,8 +213,6 @@ public class InventoryItem
     public decimal? TotalValue { get; set; }
 
     public decimal? AverageCost { get; set; }
-
-    public bool? AverageCostSpecified { get; set; }
 
     public bool? UseBins { get; set; }
 
@@ -288,8 +264,6 @@ public class InventoryItem
 
     public bool? ExcludeFromSitemap { get; set; }
 
-    public bool? ExcludeFromSitemapSpecified { get; set; }
-
     public bool? IsDonationItem { get; set; }
 
     public bool? ShowDefaultDonationAmount { get; set; }
@@ -303,8 +277,6 @@ public class InventoryItem
     public string OutOfStockMessage { get; set; }
 
     public bool? OnSpecial { get; set; }
-
-    public bool? OnSpecialSpecified { get; set; }
 
     public ItemOutOfStockBehavior OutOfStockBehavior { get; set; }
 
@@ -358,8 +330,6 @@ public class InventoryItem
 
     public bool? AvailableToPartners { get; set; }
 
-    public bool? AvailableToPartnersSpecified { get; set; }
-
     public RecordRef Department { get; set; }
 
     public RecordRef Class { get; set; }
@@ -381,8 +351,6 @@ public class InventoryItem
     public RecordRef AlternateDemandSourceItem { get; set; }
 
     public decimal? FixedLotSize { get; set; }
-
-    public bool? FixedLotSizeSpecified { get; set; }
 
     public RecordRef SupplyType { get; set; }
 
