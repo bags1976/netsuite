@@ -24,7 +24,7 @@ public class InventoryItem
 
     public string SalesDescription { get; set; }
 
-    public bool? IncludeChildren { get; set; }
+    public bool IncludeChildren { get; set; }
 
     public RecordRef IncomeAccount { get; set; }
 
@@ -42,17 +42,17 @@ public class InventoryItem
 
     public RecordRef CreateRevenuePlansOn { get; set; }
 
-    public bool? DirectRevenuePosting { get; set; }
+    public bool DirectRevenuePosting { get; set; }
 
-    public bool? ContingentRevenueHandling { get; set; }
+    public bool ContingentRevenueHandling { get; set; }
 
     public RecordRef RevReclassFxAccount { get; set; }
 
-    public bool? IsTaxable { get; set; }
+    public bool IsTaxable { get; set; }
 
     public RecordRef AssetAccount { get; set; }
 
-    public bool? MatchBillToReceipt { get; set; }
+    public bool MatchBillToReceipt { get; set; }
 
     public RecordRef BillQtyVarianceAcct { get; set; }
 
@@ -88,13 +88,13 @@ public class InventoryItem
 
     public RecordRef BillingSchedule { get; set; }
 
-    public bool? TrackLandedCost { get; set; }
+    public bool TrackLandedCost { get; set; }
 
     public string MatrixItemNameTemplate { get; set; }
 
-    public bool? IsDropShipItem { get; set; }
+    public bool IsDropShipItem { get; set; }
 
-    public bool? IsSpecialOrderItem { get; set; }
+    public bool IsSpecialOrderItem { get; set; }
 
     public string StockDescription { get; set; }
 
@@ -102,7 +102,7 @@ public class InventoryItem
 
     public RecordRef IntercoDefRevAccount { get; set; }
 
-    public bool? Producer { get; set; }
+    public bool Producer { get; set; }
 
     public string Manufacturer { get; set; }
 
@@ -110,7 +110,7 @@ public class InventoryItem
 
     public string Mpn { get; set; }
 
-    public bool? MultManufactureAddr { get; set; }
+    public bool MultManufactureAddr { get; set; }
 
     public string ManufacturerAddr1 { get; set; }
 
@@ -122,7 +122,7 @@ public class InventoryItem
 
     public string CountryOfManufacture { get; set; }
 
-    public bool? RoundUpAsComponent { get; set; }
+    public bool RoundUpAsComponent { get; set; }
 
     public decimal? PurchaseOrderQuantity { get; set; }
 
@@ -154,7 +154,7 @@ public class InventoryItem
 
     public long? MinimumQuantity { get; set; }
 
-    public bool? EnforceMinQtyInternally { get; set; }
+    public bool EnforceMinQtyInternally { get; set; }
 
     public long MaximumQuantity { get; set; }
 
@@ -164,11 +164,11 @@ public class InventoryItem
 
     public RecordRef ShipPackage { get; set; }
 
-    public bool? ShipIndividually { get; set; }
+    public bool ShipIndividually { get; set; }
 
     public RecordRef CostCategory { get; set; }
 
-    public bool? PricesIncludeTax { get; set; }
+    public bool PricesIncludeTax { get; set; }
 
     public RecordRef PurchasePriceVarianceAcct { get; set; }
 
@@ -176,7 +176,7 @@ public class InventoryItem
 
     public string ReorderPointUnits { get; set; }
 
-    public bool? UseMarginalRates { get; set; }
+    public bool UseMarginalRates { get; set; }
 
     public string PreferredStockLevelUnits { get; set; }
 
@@ -196,7 +196,7 @@ public class InventoryItem
 
     public RecordRef PreferredLocation { get; set; }
 
-    public bool? IsStorePickupAllowed { get; set; }
+    public bool IsStorePickupAllowed { get; set; }
 
     public long ReorderMultiple { get; set; }
 
@@ -214,17 +214,17 @@ public class InventoryItem
 
     public decimal? AverageCost { get; set; }
 
-    public bool? UseBins { get; set; }
+    public bool UseBins { get; set; }
 
     public string QuantityReorderUnits { get; set; }
 
     public long LeadTime { get; set; }
 
-    public bool? AutoLeadTime { get; set; }
+    public bool AutoLeadTime { get; set; }
 
     public decimal? LastPurchasePrice { get; set; }
 
-    public bool? AutoPreferredStockLevel { get; set; }
+    public bool AutoPreferredStockLevel { get; set; }
 
     public decimal? PreferredStockLevelDays { get; set; }
 
@@ -234,7 +234,7 @@ public class InventoryItem
 
     public long BackwardConsumptionDays { get; set; }
 
-    public bool? SeasonalDemand { get; set; }
+    public bool SeasonalDemand { get; set; }
 
     public string SafetyStockLevelUnits { get; set; }
 
@@ -244,7 +244,7 @@ public class InventoryItem
 
     public RecordRef DistributionCategory { get; set; }
 
-    public bool? AutoReorderPoint { get; set; }
+    public bool AutoReorderPoint { get; set; }
 
     public string StoreDisplayName { get; set; }
 
@@ -262,21 +262,21 @@ public class InventoryItem
 
     public string MetaTagHtml { get; set; }
 
-    public bool? ExcludeFromSitemap { get; set; }
+    public bool ExcludeFromSitemap { get; set; }
 
-    public bool? IsDonationItem { get; set; }
+    public bool IsDonationItem { get; set; }
 
-    public bool? ShowDefaultDonationAmount { get; set; }
+    public bool ShowDefaultDonationAmount { get; set; }
 
     public decimal? MaxDonationAmount { get; set; }
 
-    public bool? DontShowPrice { get; set; }
+    public bool DontShowPrice { get; set; }
 
     public string NoPriceMessage { get; set; }
 
     public string OutOfStockMessage { get; set; }
 
-    public bool? OnSpecial { get; set; }
+    public bool OnSpecial { get; set; }
 
     public ItemOutOfStockBehavior OutOfStockBehavior { get; set; }
 
@@ -304,9 +304,9 @@ public class InventoryItem
 
     public string VendorName { get; set; }
 
-    public bool? IsOnline { get; set; }
+    public bool IsOnline { get; set; }
 
-    public bool? IsHazmatItem { get; set; }
+    public bool IsHazmatItem { get; set; }
 
     public string HazmatId { get; set; }
 
@@ -320,15 +320,15 @@ public class InventoryItem
 
     public decimal? HazmatItemUnitsQty { get; set; }
 
-    public bool? IsGcoCompliant { get; set; }
+    public bool IsGcoCompliant { get; set; }
 
-    public bool? OfferSupport { get; set; }
+    public bool OfferSupport { get; set; }
 
-    public bool? IsInactive { get; set; }
+    public bool IsInactive { get; set; }
 
-    public bool? IsLotItem { get; set; }
+    public bool IsLotItem { get; set; }
 
-    public bool? AvailableToPartners { get; set; }
+    public bool AvailableToPartners { get; set; }
 
     public RecordRef Department { get; set; }
 
@@ -404,7 +404,7 @@ public class InventoryItem
 
     public RecordRef ConsumptionUnit { get; set; }
 
-    public bool? EnableCatchWeight { get; set; }
+    public bool EnableCatchWeight { get; set; }
 
     public RecordRef SecondaryUnitsType { get; set; }
 
