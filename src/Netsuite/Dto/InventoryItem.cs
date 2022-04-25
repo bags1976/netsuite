@@ -8,6 +8,8 @@ public class InventoryItem
 
     public DateTime LastModifiedDate { get; set; }
 
+    public string DisplayName { get; set; }
+    
     public string PurchaseDescription { get; set; }
 
     public RecordRef ExpenseAccount { get; set; }
