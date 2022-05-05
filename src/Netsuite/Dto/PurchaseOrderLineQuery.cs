@@ -17,7 +17,7 @@ namespace Netsuite.Dto
         public string Description { get; set; }
         public string Entity { get; set; }
         public string ExpenseAccount { get; set; }
-        public DateTime? ExpectedShipDate { get; set; }
+        public DateTime? ExpectedReceiptDate { get; set; }
         public DateTime? ActualShipDate { get; set; }
         public decimal ForeignAmount { get; set; }
         public decimal Price { get; set; }

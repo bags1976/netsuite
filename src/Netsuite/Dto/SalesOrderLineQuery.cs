@@ -38,5 +38,6 @@ namespace Netsuite.Dto
         public bool IsFullyShipped { get; set; }
         public string Location { get; set; }
         public decimal NetAmount { get; set; }
+        public decimal? OrderPriority { get; set; }
     }
 }
