@@ -35,7 +35,6 @@ namespace Netsuite.Dto
         public RecordRef Location { get; set; }
         public RecordRef LandedCostCategory { get; set; }
         public RecordRef Customer { get; set; }
-        public bool? IsBillable { get; set; }
         public TransactionBillVarianceStatus BillVarianceStatus { get; set; }
         public bool? MatchBillToReceipt { get; set; }
         public DateTime? ExpectedReceiptDate { get; set; }
