@@ -8,7 +8,7 @@ public class InventoryItem
     public bool AvailableToPartners { get; set; }
     public decimal? AverageCost { get; set; }
     public long? BackwardConsumptionDays { get; set; }
-    public bool? Isfulfillable { get; set; }
+    public bool Isfulfillable { get; set; }
     public RecordRef Class { get; set; }
     public RecordRef CostCategory { get; set; }
     public ItemCostEstimateType CostEstimateType { get; set; }
