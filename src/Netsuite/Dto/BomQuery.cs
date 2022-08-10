@@ -4,5 +4,6 @@ namespace Netsuite.Dto
     {
         public string PreferredLocation { get; set; }
         public string DefaultForLocation { get; set; }
+        public string ComponentItemType { get; set; }
     }
 }
