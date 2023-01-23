@@ -21,13 +21,9 @@ namespace Netsuite.Dto
         public bool RevisionIsInactive { get; set; }
         public DateTime? EffectiveStartDate { get; set; }
         public DateTime? EffectiveEndDate { get; set; }
-        public int ComponentId { get; set; }
-        public string ItemSource { get; set; }
         public string Description { get; set; }
         public string ComponentName { get; set; }
-        public string UnitsName { get; set; }
         public string RestrictToLocations { get; set; }
-        public decimal BomQuantity { get; set; }
         public int ComponentLineId { get; set; }
         public int Units { get; set; }
         public RecordRef CustomForm { get; set; }
