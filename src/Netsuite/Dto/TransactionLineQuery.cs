@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 namespace Netsuite.Dto
 {
@@ -42,5 +43,6 @@ namespace Netsuite.Dto
         public bool TaxLine { get; set; }
         public bool SpecialOrder { get; set; }
         public string Location { get; set; }
+        public List<InventoryAssignmentQuery> InventoryAssignment { get; set; }
     }
 }
