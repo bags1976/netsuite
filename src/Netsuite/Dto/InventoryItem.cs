@@ -8,10 +8,10 @@ namespace Netsuite.Dto
         public RecordRef StoreDisplayImage { get; set; }
         public string PageTitle { get; set; }
         public RecordRef PlanningItemCategory { get; set; }
-        public long SupplyTimeFence { get; set; }
-        public long LeadTime { get; set; }
+        public int? SupplyTimeFence { get; set; }
+        public int? LeadTime { get; set; }
         public string RelatedItemsDescription { get; set; }
-        public long RescheduleOutDays { get; set; }
+        public int? RescheduleOutDays { get; set; }
         public bool RoundUpAsComponent { get; set; }
         public decimal? SafetyStockLevel { get; set; }
         public bool IsSerialItem { get; set; }

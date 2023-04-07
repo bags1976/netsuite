@@ -7,7 +7,7 @@ namespace Netsuite.Dto
     {
         public string ProdQtyVarianceAcct { get; set; }
         public string PurchaseUnit { get; set; }
-        public long RescheduleInDays { get; set; }
+        public int? RescheduleInDays { get; set; }
         public decimal? AverageCost { get; set; }
         public bool ShipIndividually { get; set; }
         public string CreateExpensePlansOn { get; set; }
@@ -52,11 +52,11 @@ namespace Netsuite.Dto
         public DateTime CreatedDate { get; set; }
         public decimal? FxCost { get; set; }
         public string BillExchRateVarianceAcct { get; set; }
-        public long PeriodicLotSizeDays { get; set; }
+        public int? PeriodicLotSizeDays { get; set; }
         public string SupplyReplenishmentMethod { get; set; }
         public string Manufacturer { get; set; }
         public string IsOnline { get; set; }
-        public long DemandTimeFence { get; set; }
+        public int? DemandTimeFence { get; set; }
         public string UnbuildVarianceAccount { get; set; }
         public string OverallQuantityPricingType { get; set; }
         public decimal? DemandModifier { get; set; }
@@ -68,7 +68,7 @@ namespace Netsuite.Dto
         public string PricingGroup { get; set; }
         public string PreferredLocation { get; set; }
         public string ItemProcessFamily { get; set; }
-        public long ForwardConsumptionDays { get; set; }
+        public int? ForwardConsumptionDays { get; set; }
         public string SupplyLotSizingMethod { get; set; }
         public string IsDropShipItem { get; set; }
         public string BillPriceVarianceAcct { get; set; }
@@ -81,7 +81,7 @@ namespace Netsuite.Dto
         public string IncomeAccount { get; set; }
         public string Residual { get; set; }
         public string AtpMethod { get; set; }
-        public long? MinimumQuantity { get; set; }
+        public int? MinimumQuantity { get; set; }
         public string ScrapAcct { get; set; }
         public decimal? TransferPrice { get; set; }
         public string AssetAccount { get; set; }
@@ -89,7 +89,7 @@ namespace Netsuite.Dto
         public decimal? Cost { get; set; }
         public string CostingMethod { get; set; }
         public DateTime LastModifiedDate { get; set; }
-        public long? BackwardConsumptionDays { get; set; }
+        public int? BackwardConsumptionDays { get; set; }
         public string UpcCode { get; set; }
         public bool IsLotItem { get; set; }
         public bool IncludeChildren { get; set; }
@@ -108,7 +108,7 @@ namespace Netsuite.Dto
         public string CostingMethodDisplay { get; set; }
         public string ItemProcessGroup { get; set; }
         public string ExternalId { get; set; }
-        public long MaximumQuantity { get; set; }
+        public int? MaximumQuantity { get; set; }
         public string AmortizationPeriod { get; set; }
         public decimal? TotalQuantityOnHand { get; set; }
         public decimal? TotalValue { get; set; }
