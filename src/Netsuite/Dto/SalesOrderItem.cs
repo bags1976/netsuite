@@ -59,8 +59,6 @@ namespace Netsuite.Dto
         public bool DeferRevRec { get; set; }
         public bool IsClosed { get; set; }
         public SalesOrderItemFulfillmentChoice ItemFulfillmentChoice { get; set; }
-        public RecordRef CatchUpPeriod { get; set; }
-        public RecordRef BillingSchedule { get; set; }
         public bool FromJob { get; set; }
         public decimal GrossAmt { get; set; }
         public decimal TaxAmount { get; set; }
