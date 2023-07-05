@@ -1,30 +1,23 @@
 namespace Netsuite.Enum
 {
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("wsdl", "4.8.3928.0")]
-    [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:types.inventory_2021_1.transactions.webservices.netsuite.com")]
-    public enum WorkOrderOrderStatus {
+    public enum WorkOrderOrderStatus
+    {
+        /// Pending Approval<remarks/>
+        A,
 
-        /// <remarks/>
-        _built,
+        /// Pending Build<remarks/>
+        B,
 
-        /// <remarks/>
-        _cancelled,
+        /// Cancelled<remarks/>
+        C,
 
-        /// <remarks/>
-        _closed,
+        /// Partially Built<remarks/>
+        D,
 
-        /// <remarks/>
-        _inProcess,
+        /// Built<remarks/>
+        G,
 
-        /// <remarks/>
-        _planned,
-
-        /// <remarks/>
-        _released,
-
-        /// <remarks/>
-        _undefined,
+        /// Closed<remarks/>
+        H,
     }
 }
