@@ -5,6 +5,9 @@ namespace Netsuite.Dto
     public class InboundShipmentItem : Record
     {
         public string PurchaseOrderTransaction { get; set; }
+        // Purchase order transaction line unique eky
+        public string ShipmentItemTransaction { get; set; }
+        public string ShipmentItemLineNumber { get; set; }
         public string ShipmentItem { get; set; }
         public string ShipmentItemDescription { get; set; }
         public string VendorId { get; set; }
@@ -13,6 +16,7 @@ namespace Netsuite.Dto
         public decimal? QuantityExpected { get; set; }
         public decimal? QuantityRemaining { get; set; }
         public string Unit { get; set; }
+        public string Subsidiary { get; set; }
         public decimal? PoRate { get; set; }
         public decimal? ExpectedRate { get; set; }
         public decimal? ShipmentItemExchangeRate { get; set; }

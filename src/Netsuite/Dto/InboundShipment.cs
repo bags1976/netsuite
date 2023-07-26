@@ -9,6 +9,8 @@ namespace Netsuite.Dto
         public string ShipmentNumber { get; set; }
         public string ExternalDocumentNumber { get; set; }
         public InboundShipmentShipmentStatus ShipmentStatus { get; set; }
+        public DateTime? LastModifiedDate { get; set; }
+        public DateTime? ShipmentCreatedDate { get; set; }
         public DateTime? ExpectedShippingDate { get; set; }
         public DateTime? ActualShippingDate { get; set; }
         public DateTime? ExpectedDeliveryDate { get; set; }
