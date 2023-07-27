@@ -5,6 +5,7 @@ namespace Netsuite.Dto
 {
     public class TransactionLineQuery : Record
     {  
+        public string UniqueKey { get; set; }
         public bool IsBillable { get; set; }
         public bool IsClosed { get; set; }
         public string ExpenseAccount { get; set; }

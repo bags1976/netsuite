@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 namespace Netsuite.Dto
 {
@@ -21,5 +22,6 @@ namespace Netsuite.Dto
         public string BillOfMaterialsRevision { get; set; }
         public string Subsidiary { get; set; }
         public string ExternalId { get; set; }
+        public List<WorkOrderItem> Item { get; set; }
     }
 }
