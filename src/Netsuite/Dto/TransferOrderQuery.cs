@@ -1,5 +1,4 @@
 using System;
-using Netsuite.Enum;
 
 namespace Netsuite.Dto
 {
