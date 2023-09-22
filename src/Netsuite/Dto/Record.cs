@@ -16,7 +16,7 @@ namespace Netsuite.Dto
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(InventoryTransfer))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(WorkOrder))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(InterCompanyTransferOrder))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(TransferOrder))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(TransferOrderQuery))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(AssemblyUnbuild))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(AssemblyBuild))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(InventoryAdjustment))]
