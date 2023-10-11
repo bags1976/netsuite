@@ -11,7 +11,6 @@ namespace Netsuite.Dto
         public decimal? ExchangeRate { get; set; }
         public decimal? ForeignTotal { get; set; }
         public string LastModifiedBy { get; set; }
-        public bool PaymentHold { get; set; }
         public string Email { get; set; }
         public string CustBody_DN_SO_CustomField1 { get; set; }
         public string CustBody_DN_SO_CustomField2 { get; set; }

@@ -27,8 +27,6 @@ namespace Netsuite.Dto
 
         public string LastModifiedBy { get; set; }
 
-        public bool PaymentHold { get; set; }
-
         public string Email { get; set; }
 
         public string CustBody_DN_SO_CustomField1 { get; set; }

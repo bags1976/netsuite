@@ -10,6 +10,7 @@ namespace Netsuite.Dto
         public string Entity { get; set; }
         public string TranId { get; set; }
         public string TransactionNumber { get; set; }
+        public string ShipCarrier { get; set; }
         public int Number { get; set; }
         public DateTime? TranDate { get; set; }
         public DateTime? LastModifiedDate { get; set; }
@@ -23,7 +24,10 @@ namespace Netsuite.Dto
         public bool Voided { get; set; }
         public bool Void { get; set; }
         public bool Posting { get; set; }
+        public bool PaymentHold { get; set; }
+        public bool ShipComplete { get; set; }
         public string PostingPeriod { get; set; }
         public string OtherRefNum { get; set; }
+        public string RecordType { get; set; }
     }
 }
