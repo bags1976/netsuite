@@ -4,6 +4,5 @@ namespace Netsuite.Dto
     {
         public string ItemId { get; set; }
         public string ItemType { get; set; }
-        public bool MainLine { get; set; }
     }
 }

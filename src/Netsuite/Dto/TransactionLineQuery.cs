@@ -44,6 +44,7 @@ namespace Netsuite.Dto
         public bool TaxLine { get; set; }
         public bool SpecialOrder { get; set; }
         public string Location { get; set; }
+        public bool MainLine { get; set; }
         public int LineSequenceNumber { get; set; }
         public string TransactionLineType { get; set; }
         public string TransferOrderItemLineId { get; set; }
