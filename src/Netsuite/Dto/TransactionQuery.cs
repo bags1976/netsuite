@@ -10,6 +10,7 @@ namespace Netsuite.Dto
         public string Entity { get; set; }
         public string TranId { get; set; }
         public string TransactionNumber { get; set; }
+        public string TranDisplayName { get; set; }
         public string ShipCarrier { get; set; }
         public int Number { get; set; }
         public DateTime? TranDate { get; set; }
@@ -17,6 +18,7 @@ namespace Netsuite.Dto
         public DateTime? CreatedDate { get; set; }
         public DateTime? CloseDate { get; set; }
         public DateTime? DueDate { get; set; }
+        public DateTime? ShipDate { get; set; }
         public string CreatedBy { get; set; }
         public string Memo { get; set; }
         public string Status { get; set; }
