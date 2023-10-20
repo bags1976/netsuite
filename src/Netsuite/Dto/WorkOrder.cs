@@ -22,6 +22,8 @@ namespace Netsuite.Dto
         public string BillOfMaterialsRevision { get; set; }
         public string Subsidiary { get; set; }
         public string ExternalId { get; set; }
+        public string BomName { get; set; }
+        public string BomVersion { get; set; }
         public List<WorkOrderItem> Item { get; set; }
     }
 }
