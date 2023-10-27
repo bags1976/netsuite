@@ -3,11 +3,10 @@ using System.Collections.Generic;
 
 namespace Netsuite.Dto
 {
-    public class SalesOrderQuery : TransactionQuery
+    public class SalesOrderQuery : TransactionWithLinesQuery<TransactionLineQuery>
     {
         public string Currency { get; set; }
         public DateTime? ActualShipDate { get; set; }
-        public DateTime? ShipDate { get; set; }
         public decimal? ExchangeRate { get; set; }
         public decimal? ForeignTotal { get; set; }
         public string LastModifiedBy { get; set; }
@@ -22,6 +21,5 @@ namespace Netsuite.Dto
         public string CustBody_DN_SO_CustomField8 { get; set; }
         public string CustBody_DN_SO_CustomField9 { get; set; }
         public string CustBody_DN_SO_CustomField10 { get; set; }
-        public List<TransactionLineQuery> Item { get; set; }
     }
 }

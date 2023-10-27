@@ -6,7 +6,6 @@ namespace Netsuite.Dto
     {        
         public string Currency { get; set; }
         public DateTime? ActualShipDate { get; set; }
-        public DateTime? ShipDate { get; set; }
         public DateTime? ActualReceiveDate { get; set; }
         public DateTime? ReceiveDate { get; set; }
         public decimal? ExchangeRate { get; set; }

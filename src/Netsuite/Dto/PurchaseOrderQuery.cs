@@ -2,7 +2,7 @@ using System.Collections.Generic;
 
 namespace Netsuite.Dto
 {
-    public class PurchaseOrderQuery : TransactionQuery
+    public class PurchaseOrderQuery : TransactionWithLinesQuery<TransactionLineQuery>
     {
         public string CustBody_DN_PO_CustomField1 { get; set; }
         public string CustBody_DN_PO_CustomField2 { get; set; }
@@ -14,6 +14,5 @@ namespace Netsuite.Dto
         public string CustBody_DN_PO_CustomField8 { get; set; }
         public string CustBody_DN_PO_CustomField9 { get; set; }
         public string CustBody_DN_PO_CustomField10 { get; set; }
-        public List<TransactionLineQuery> Item { get; set; }
     }
 }
