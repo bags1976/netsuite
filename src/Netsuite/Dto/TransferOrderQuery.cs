@@ -4,7 +4,6 @@ namespace Netsuite.Dto
 {
     public partial class TransferOrderQuery : TransactionQuery
     {        
-        public string Currency { get; set; }
         public DateTime? ActualShipDate { get; set; }
         public DateTime? ActualReceiveDate { get; set; }
         public DateTime? ReceiveDate { get; set; }

@@ -5,7 +5,6 @@ namespace Netsuite.Dto
 {
     public class SalesOrderQuery : TransactionWithLinesQuery<TransactionLineQuery>
     {
-        public string Currency { get; set; }
         public DateTime? ActualShipDate { get; set; }
         public decimal? ExchangeRate { get; set; }
         public decimal? ForeignTotal { get; set; }
