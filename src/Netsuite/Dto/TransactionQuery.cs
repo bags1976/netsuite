@@ -31,8 +31,6 @@ namespace Netsuite.Dto
         public string PostingPeriod { get; set; }
         public string OtherRefNum { get; set; }
         public string RecordType { get; set; }
-        // transaction id which originated the order
-        public string CreatedFrom { get; set; }
         public string Subsidiary { get; set; }
         public string ExternalId { get; set; }
         public string SubsidiaryTaxRegNum { get; set; }
