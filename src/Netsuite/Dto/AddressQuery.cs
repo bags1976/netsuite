@@ -2,7 +2,7 @@ namespace Netsuite.Dto
 {
     public abstract class AddressQuery : Record
     {
-        public string BillingAddressee { get; set; }
+        public string BillAddressee { get; set; }
         public string BillingAddress { get; set; }
         public string BillAddressAttention { get; set; }
         public string BillAddressLine1 { get; set; }
@@ -11,7 +11,7 @@ namespace Netsuite.Dto
         public string BillAddressZip { get; set; }
         public string BillAddressCountry { get; set; }
         public string BillAddressPhone { get; set; }
-        public string ShippingAddressee { get; set; }
+        public string ShipAddressee { get; set; }
         public string ShippingAddress { get; set; }
         public string ShipAddressAttention { get; set; }
         public string ShipAddressLine1 { get; set; }
