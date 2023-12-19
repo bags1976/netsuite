@@ -6,6 +6,8 @@ namespace Netsuite.Dto
         public string BillingAddress { get; set; }
         public string BillAddressAttention { get; set; }
         public string BillAddressLine1 { get; set; }
+        public string BillAddressLine2 { get; set; }
+        public string BillAddressLine3 { get; set; }
         public string BillAddressCity { get; set; }
         public string BillAddressState { get; set; }
         public string BillAddressZip { get; set; }
@@ -15,6 +17,8 @@ namespace Netsuite.Dto
         public string ShippingAddress { get; set; }
         public string ShipAddressAttention { get; set; }
         public string ShipAddressLine1 { get; set; }
+        public string ShipAddressLine2 { get; set; }
+        public string ShipAddressLine3 { get; set; }
         public string ShipAddressCity { get; set; }
         public string ShipAddressState { get; set; }
         public string ShipAddressZip { get; set; }
