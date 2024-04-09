@@ -36,8 +36,9 @@ namespace Netsuite.Dto
         public decimal? QuantityPacked { get; set; }
         public decimal? QuantityShipRecv { get; set; }
         public decimal? QuantityBackOrdered { get; set; }
-        public bool CommitInventory { get; set; }
+        public decimal? QuantityCommitted { get; set; }
         public bool HasFulfillableItems { get; set; }
+        public string CommitInventory { get; set; }
         public string CreatedFrom { get; set; }
         public decimal? Rate { get; set; }
         public decimal? RateAmount { get; set; }
