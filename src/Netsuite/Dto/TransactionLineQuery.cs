@@ -37,6 +37,7 @@ namespace Netsuite.Dto
         public decimal? QuantityShipRecv { get; set; }
         public decimal? QuantityBackOrdered { get; set; }
         public decimal? QuantityCommitted { get; set; }
+        public decimal? QuantityAllocated { get; set; }
         public bool HasFulfillableItems { get; set; }
         public string CommitInventory { get; set; }
         public string CreatedFrom { get; set; }
@@ -52,5 +53,6 @@ namespace Netsuite.Dto
         public string TransactionLineType { get; set; }
         public string TransferOrderItemLineId { get; set; }
         public List<InventoryAssignmentQuery> InventoryAssignment { get; set; }
+        public virtual Dictionary<string, object> AdditionalData { get; set; } = new Dictionary<string, object>();
     }
 }
