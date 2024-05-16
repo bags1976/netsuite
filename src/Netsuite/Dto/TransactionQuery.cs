@@ -35,5 +35,6 @@ namespace Netsuite.Dto
         public string ExternalId { get; set; }
         public string SubsidiaryTaxRegNum { get; set; }
         public string Currency { get; set; }
+        public string FormName { get; set; }
     }
 }

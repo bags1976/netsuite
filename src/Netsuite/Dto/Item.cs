@@ -120,6 +120,6 @@ namespace Netsuite.Dto
         public decimal? PurchaseOrderAmount { get; set; }
         public decimal? PurchaseOrderQuantityDiff { get; set; }
         public decimal? PurchaseOrderQuantity { get; set; }
-        public string WeightUnit { get; set; }
+        public string WeightUnits { get; set; }
     }
 }

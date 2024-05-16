@@ -4,6 +4,8 @@ namespace Netsuite.Dto
 {
     public class CustomerSearch : Record
     {
+        public string EntityId { get; set; }
+        public string Subsidiary { get; set; }
         public string CompanyName { get; set; }
         public string Currency { get; set; }
         public DateTime DateCreated { get; set; }
