@@ -12,7 +12,7 @@ namespace Netsuite.Dto
         public string TransactionNumber { get; set; }
         public string TranDisplayName { get; set; }
         public string ShipCarrier { get; set; }
-        public int Number { get; set; }
+        public string Number { get; set; }
         public DateTime? TranDate { get; set; }
         public DateTime? LastModifiedDate { get; set; }
         public DateTime? CreatedDate { get; set; }
