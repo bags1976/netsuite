@@ -202,20 +202,6 @@ namespace Netsuite.Dto
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:core_2021_1.platform.webservices.netsuite.com")]
     public abstract partial class Record {
-
-        private string[] nullFieldListField;
-
-        /// <remarks/>
-        [System.Xml.Serialization.XmlArrayItemAttribute("name", IsNullable=false)]
-        public string[] nullFieldList {
-            get {
-                return this.nullFieldListField;
-            }
-            set {
-                this.nullFieldListField = value;
-            }
-        }
-        
         public string Id { get; set; }
     }
 }

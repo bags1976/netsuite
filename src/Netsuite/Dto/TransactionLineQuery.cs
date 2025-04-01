@@ -22,6 +22,7 @@ namespace Netsuite.Dto
         public string Description { get; set; }
         public string Item { get; set; }
         public string ItemType { get; set; }
+        public string ItemSource { get; set; }
         public decimal Quantity { get; set; }
         public string Subsidiary { get; set; }
         public string TargetSubsidiary { get; set; }
@@ -41,6 +42,7 @@ namespace Netsuite.Dto
         public decimal? QuantityAllocated { get; set; }
         public bool HasFulfillableItems { get; set; }
         public string CommitInventory { get; set; }
+        public bool CommitmentFirm { get; set; }
         public string CreatedFrom { get; set; }
         public decimal? Rate { get; set; }
         public decimal? RateAmount { get; set; }
