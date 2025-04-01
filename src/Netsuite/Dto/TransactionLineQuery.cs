@@ -4,7 +4,7 @@ using System.Collections.Generic;
 namespace Netsuite.Dto
 {
     public class TransactionLineQuery : Record
-    {  
+    {
         public string PartNumber { get; set; }
         public string UniqueKey { get; set; }
         public bool IsBillable { get; set; }
@@ -19,6 +19,7 @@ namespace Netsuite.Dto
         public string Entity { get; set; }
         public bool IsCogs { get; set; }
         public string Memo { get; set; }
+        public string Description { get; set; }
         public string Item { get; set; }
         public string ItemType { get; set; }
         public decimal Quantity { get; set; }
